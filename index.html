@@ -1,0 +1,3600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>iConnect — Certified iPhones in Rand</title>
+  <meta name="description"
+    content="South Africa's premier certified pre-owned iPhone specialist. Rigorously tested, ICASA approved, 12-month warranty, and insured nationwide delivery.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #141210;
+      --bg-elev: #1a1712;
+      --card: #17140f;
+      --card-2: #1d1a14;
+      --border: rgba(255, 255, 255, .09);
+      --ink: #F4F1E9;
+      --muted: #8f8b81;
+      --muted-2: #6f6c64;
+      --gold: #cda45e;
+      --gold-soft: rgba(205, 164, 94, .14);
+      --blue: #6c93ef;
+      --navy: #212f57;
+      --navy-2: #2b3d70;
+      --coral: #d98a6f;
+      --green: #4ade80;
+      --green-soft: rgba(74, 222, 128, .12);
+      box-sizing: border-box;
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root:not([data-theme="dark"]) {
+        --bg: #F3F0E8;
+        --bg-elev: #EAE6DA;
+        --card: #FFFFFF;
+        --card-2: #F6F3EA;
+        --border: rgba(20, 18, 16, .10);
+        --ink: #171512;
+        --muted: #6b6a63;
+        --muted-2: #8a877e;
+        --gold: #9c7530;
+        --gold-soft: rgba(156, 117, 48, .12);
+        --blue: #2c56c9;
+        --navy: #20305c;
+        --navy-2: #2c4180;
+        --coral: #b3543a;
+        --green: #15803d;
+        --green-soft: rgba(21, 128, 61, .12);
+      }
+    }
+
+    :root[data-theme="dark"] {
+      --bg: #141210;
+      --bg-elev: #1a1712;
+      --card: #17140f;
+      --card-2: #1d1a14;
+      --border: rgba(255, 255, 255, .09);
+      --ink: #F4F1E9;
+      --muted: #8f8b81;
+      --muted-2: #6f6c64;
+      --gold: #cda45e;
+      --gold-soft: rgba(205, 164, 94, .14);
+      --blue: #6c93ef;
+      --navy: #212f57;
+      --navy-2: #2b3d70;
+      --coral: #d98a6f;
+      --green: #4ade80;
+      --green-soft: rgba(74, 222, 128, .12);
+    }
+
+    :root[data-theme="light"] {
+      --bg: #F3F0E8;
+      --bg-elev: #EAE6DA;
+      --card: #FFFFFF;
+      --card-2: #F6F3EA;
+      --border: rgba(20, 18, 16, .10);
+      --ink: #171512;
+      --muted: #6b6a63;
+      --muted-2: #8a877e;
+      --gold: #9c7530;
+      --gold-soft: rgba(156, 117, 48, .12);
+      --blue: #2c56c9;
+      --navy: #20305c;
+      --navy-2: #2c4180;
+      --coral: #b3543a;
+      --green: #15803d;
+      --green-soft: rgba(21, 128, 61, .12);
+    }
+
+    html {
+      scroll-padding-top: env(safe-area-inset-top, 0px);
+      scroll-behavior: smooth;
+    }
+
+    * {
+      box-sizing: border-box;
+      transition: background-color .2s ease, border-color .2s ease;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+      color: inherit;
+    }
+
+    input,
+    select,
+    textarea {
+      font-family: inherit;
+    }
+
+    /* ---------- header ---------- */
+    header.top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px;
+      padding-top: calc(14px + env(safe-area-inset-top, 0px));
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      z-index: 20;
+      gap: 12px;
+      backdrop-filter: blur(12px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      cursor: pointer;
+      min-width: 0;
+    }
+
+    .brand .mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 11px;
+      background: var(--gold);
+      color: #171512;
+      font-weight: 800;
+      font-size: 15px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(205, 164, 94, .25);
+    }
+
+    .brand .word {
+      min-width: 0;
+    }
+
+    .brand .word .t1 {
+      font-weight: 800;
+      font-size: 17px;
+      margin: 0;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .brand .word .t2 {
+      font-size: 11.5px;
+      color: var(--muted);
+      margin: 1px 0 0;
+      white-space: nowrap;
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .icon-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: var(--card-2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      color: var(--ink);
+      font-size: 16px;
+      transition: transform .15s ease, background-color .15s ease;
+    }
+
+    .icon-btn:hover {
+      transform: scale(1.05);
+    }
+
+    .icon-btn:active {
+      transform: scale(0.95);
+    }
+
+    .icon-btn .badge {
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      background: var(--blue);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700;
+      min-width: 18px;
+      height: 18px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 4px;
+      border: 2px solid var(--bg);
+    }
+
+    .pill-btn {
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--ink);
+      font-size: 12.5px;
+      font-weight: 700;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all .15s ease;
+    }
+
+    .pill-btn:hover {
+      background: var(--card-2);
+    }
+
+    .pill-btn.filled {
+      background: var(--navy);
+      border-color: transparent;
+      color: #fff;
+    }
+
+    .pill-btn.filled:hover {
+      background: var(--navy-2);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 18px 80px;
+      width: 100%;
+      flex: 1;
+    }
+
+    .view {
+      padding-top: 22px;
+      animation: fadeIn .25s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(6px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ---------- home ---------- */
+    .feature-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 22px;
+      margin-bottom: 28px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+      transition: transform .2s ease, border-color .2s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(205, 164, 94, 0.35);
+    }
+
+    .feature-card .row1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .feature-card .sku {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 11.5px;
+      color: var(--muted);
+      letter-spacing: .03em;
+    }
+
+    .badge-outline {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      padding: 4px 10px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      border-radius: 999px;
+      background: var(--gold-soft);
+    }
+
+    .badge-outline.blue {
+      border-color: var(--blue);
+      color: var(--blue);
+      background: rgba(108, 147, 239, .12);
+    }
+
+    .feature-card .phone-wrap {
+      display: flex;
+      justify-content: center;
+      margin: 8px 0 18px;
+    }
+
+    .feature-card h3 {
+      font-size: 25px;
+      margin: 0 0 10px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .spec-line {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      font-size: 13.5px;
+      border-top: 1px dashed var(--border);
+    }
+
+    .spec-line span:first-child {
+      color: var(--muted);
+    }
+
+    .spec-line span:last-child {
+      font-weight: 600;
+      text-align: right;
+    }
+
+    .feature-card .price {
+      margin-top: 16px;
+      font-size: 27px;
+      font-weight: 800;
+      color: var(--gold);
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+
+    .feature-card .price .tag {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .eyebrow-row {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      color: var(--blue);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    h1.headline {
+      font-size: clamp(28px, 6vw, 38px);
+      font-weight: 800;
+      line-height: 1.14;
+      margin: 0 0 14px;
+      letter-spacing: -0.03em;
+    }
+
+    p.lede {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 0 0 22px;
+      max-width: 560px;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 13px 22px;
+      border-radius: 13px;
+      font-weight: 700;
+      font-size: 14px;
+      border: 1px solid transparent;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all .15s ease;
+    }
+
+    .btn.primary {
+      background: var(--navy);
+      color: #fff;
+      box-shadow: 0 4px 16px rgba(33, 47, 87, 0.3);
+    }
+
+    .btn.primary:hover {
+      background: var(--navy-2);
+      transform: translateY(-1px);
+    }
+
+    .btn.primary:active {
+      transform: translateY(0);
+    }
+
+    .btn.outline {
+      background: var(--card-2);
+      border-color: var(--border);
+      color: var(--ink);
+    }
+
+    .btn.outline:hover {
+      background: var(--card);
+      border-color: var(--ink);
+    }
+
+    .btn.gold {
+      background: var(--gold);
+      color: #171512;
+    }
+
+    .btn.gold:hover {
+      filter: brightness(1.08);
+    }
+
+    .stats-row {
+      display: flex;
+      gap: 22px;
+      padding: 20px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+      margin-bottom: 34px;
+    }
+
+    .stat {
+      min-width: 110px;
+      flex: 1;
+    }
+
+    .stat .n {
+      font-size: 24px;
+      font-weight: 800;
+      margin: 0;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .stat .l {
+      font-size: 11.5px;
+      color: var(--muted);
+      margin: 4px 0 0;
+      line-height: 1.4;
+    }
+
+    .section-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      font-size: 19px;
+      font-weight: 800;
+      margin: 0;
+      letter-spacing: -0.02em;
+    }
+
+    .view-all-link {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--blue);
+      cursor: pointer;
+    }
+
+    /* Trust Banner */
+    .trust-banner {
+      background: var(--card-2);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px 18px;
+      margin-bottom: 28px;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .trust-icon {
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+
+    .trust-text h4 {
+      margin: 0 0 3px;
+      font-size: 13.5px;
+      font-weight: 700;
+    }
+
+    .trust-text p {
+      margin: 0;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    /* ---------- product cards (browse) ---------- */
+    .filters {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .filter-pill {
+      padding: 8px 15px;
+      border-radius: 999px;
+      font-size: 12.5px;
+      font-weight: 700;
+      border: 1px solid var(--border);
+      background: var(--card-2);
+      color: var(--muted);
+      transition: all .15s ease;
+    }
+
+    .filter-pill:hover {
+      color: var(--ink);
+      border-color: var(--ink);
+    }
+
+    .filter-pill.active {
+      background: var(--blue);
+      color: #fff;
+      border-color: transparent;
+    }
+
+    .search-box-wrap {
+      position: relative;
+      margin: 4px 0 20px;
+    }
+
+    .search-box {
+      width: 100%;
+      padding: 13px 18px 13px 40px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--card-2);
+      color: var(--ink);
+      font-size: 14px;
+      outline: none;
+    }
+
+    .search-box:focus {
+      border-color: var(--blue);
+      background: var(--card);
+    }
+
+    .search-box::placeholder {
+      color: var(--muted-2);
+    }
+
+    .search-icon-svg {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      pointer-events: none;
+    }
+
+    .product-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .product-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      cursor: pointer;
+      transition: transform .15s ease, border-color .15s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--blue);
+    }
+
+    .product-card .thumb {
+      flex-shrink: 0;
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .product-card .info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .product-card .eyebrow2 {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: .05em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .product-card .name {
+      font-size: 17px;
+      font-weight: 800;
+      margin: 2px 0 3px;
+      letter-spacing: -0.02em;
+    }
+
+    .product-card .spec {
+      font-size: 12px;
+      color: var(--muted);
+      margin: 0 0 9px;
+      line-height: 1.3;
+    }
+
+    .swatch-row {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 10px;
+      align-items: center;
+    }
+
+    .swatch-dot {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 10px;
+      border-top: 1px dashed var(--border);
+    }
+
+    .price-row .from {
+      font-size: 10px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    .price-row .amt {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--gold);
+    }
+
+    .configure-link {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--blue);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .badge-tag {
+      font-size: 9.5px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: var(--gold-soft);
+      color: var(--gold);
+      display: inline-block;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
+    .badge-tag.green {
+      background: var(--green-soft);
+      color: var(--green);
+    }
+
+    /* ---------- product detail ---------- */
+    .back-link {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--muted);
+      margin-bottom: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+
+    .back-link:hover {
+      color: var(--ink);
+    }
+
+    .detail-card {
+      background: var(--card-2);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 24px;
+      margin-bottom: 22px;
+    }
+
+    .detail-card .row1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .detail-card .phone-wrap {
+      display: flex;
+      justify-content: center;
+      margin: 8px 0 18px;
+    }
+
+    .detail-card h2 {
+      font-size: 24px;
+      font-weight: 800;
+      margin: 0 0 4px;
+      letter-spacing: -0.02em;
+    }
+
+    .detail-card .cond {
+      font-size: 12.5px;
+      color: var(--muted);
+      margin: 0 0 12px;
+    }
+
+    .detail-price {
+      font-size: 29px;
+      font-weight: 800;
+      color: var(--gold);
+      margin-top: 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .spec-table {
+      margin-bottom: 26px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 4px 16px;
+    }
+
+    .spec-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 2px;
+      border-bottom: 1px solid var(--border);
+      font-size: 13.5px;
+    }
+
+    .spec-row:last-child {
+      border-bottom: none;
+    }
+
+    .spec-row span:first-child {
+      color: var(--muted);
+    }
+
+    .spec-row span:last-child {
+      font-weight: 600;
+      text-align: right;
+      max-width: 62%;
+    }
+
+    .config-section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+      margin-bottom: 20px;
+    }
+
+    .config-label {
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      color: var(--muted);
+      margin: 0 0 10px;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .config-label .current-choice {
+      color: var(--ink);
+      font-weight: 800;
+    }
+
+    .opt-row {
+      display: flex;
+      gap: 9px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .opt-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .opt-chip {
+      padding: 11px 16px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--card-2);
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all .15s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .opt-chip:hover {
+      border-color: var(--blue);
+    }
+
+    .opt-chip.sel {
+      border-color: var(--blue);
+      background: rgba(108, 147, 239, .12);
+      color: var(--ink);
+    }
+
+    .opt-chip .sub {
+      font-size: 10px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .opt-chip.sel .sub {
+      color: var(--blue);
+    }
+
+    .color-chip-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .color-chip {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      cursor: pointer;
+      padding: 2px;
+      display: inline-block;
+      transition: all .15s ease;
+      position: relative;
+    }
+
+    .color-chip .dot {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .color-chip.sel {
+      border-color: var(--blue);
+      transform: scale(1.12);
+    }
+
+    .qty-stepper {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 6px;
+    }
+
+    .qty-stepper button {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--card-2);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .15s ease;
+    }
+
+    .qty-stepper button:hover {
+      background: var(--card);
+      border-color: var(--blue);
+    }
+
+    .qty-stepper .n {
+      font-size: 16px;
+      font-weight: 800;
+      width: 26px;
+      text-align: center;
+    }
+
+    .total-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 24px 0 14px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .total-row .l {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .total-row .amt {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--gold);
+    }
+
+    .btn.block {
+      width: 100%;
+      text-align: center;
+      padding: 15px;
+      font-size: 15px;
+    }
+
+    /* ---------- overlays & sheets ---------- */
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, .65);
+      z-index: 50;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .25s ease;
+      backdrop-filter: blur(4px);
+    }
+
+    .overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    @media (min-width: 640px) {
+      .overlay {
+        align-items: center;
+      }
+    }
+
+    .sheet {
+      background: var(--bg-elev);
+      width: 100%;
+      max-width: 540px;
+      max-height: 90vh;
+      overflow-y: auto;
+      border-radius: 24px 24px 0 0;
+      padding: 24px 22px calc(24px + env(safe-area-inset-bottom, 0px));
+      border: 1px solid var(--border);
+      border-bottom: none;
+      transform: translateY(30px);
+      transition: transform .25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .overlay.active .sheet {
+      transform: translateY(0);
+    }
+
+    @media (min-width:640px) {
+      .sheet {
+        border-radius: 24px;
+        border-bottom: 1px solid var(--border);
+      }
+    }
+
+    .sheet-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .sheet-head h2 {
+      font-size: 22px;
+      font-weight: 800;
+      margin: 0;
+      letter-spacing: -0.02em;
+    }
+
+    .close-x {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: var(--card-2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ink);
+      font-size: 17px;
+      flex-shrink: 0;
+      cursor: pointer;
+      transition: background .15s ease;
+    }
+
+    .close-x:hover {
+      background: var(--card);
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cart-item:last-of-type {
+      border-bottom: none;
+    }
+
+    .cart-item .name {
+      font-weight: 800;
+      font-size: 15px;
+      margin: 0 0 3px;
+    }
+
+    .cart-item .meta {
+      font-size: 12.5px;
+      color: var(--muted);
+      margin: 0 0 8px;
+      line-height: 1.3;
+    }
+
+    .cart-item .price {
+      font-weight: 800;
+      font-size: 15px;
+      color: var(--gold);
+    }
+
+    .cart-item .right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+    }
+
+    .remove-link {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--coral);
+      cursor: pointer;
+    }
+
+    .remove-link:hover {
+      text-decoration: underline;
+    }
+
+    .cart-empty {
+      text-align: center;
+      color: var(--muted);
+      padding: 48px 10px;
+      font-size: 14.5px;
+    }
+
+    .field-label {
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin: 14px 0 6px;
+    }
+
+    .field-label:first-of-type {
+      margin-top: 2px;
+    }
+
+    .text-field {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--card-2);
+      color: var(--ink);
+      font-size: 14px;
+      outline: none;
+    }
+
+    .text-field:focus {
+      border-color: var(--blue);
+      background: var(--card);
+    }
+
+    .text-field::placeholder {
+      color: var(--muted-2);
+    }
+
+    select.text-field {
+      cursor: pointer;
+    }
+
+    .pay-row {
+      display: flex;
+      gap: 8px;
+      margin-top: 4px;
+      flex-wrap: wrap;
+    }
+
+    .pay-pill {
+      flex: 1;
+      min-width: 110px;
+      text-align: center;
+      padding: 11px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--card-2);
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all .15s ease;
+    }
+
+    .pay-pill:hover {
+      color: var(--ink);
+    }
+
+    .pay-pill.sel {
+      background: var(--blue);
+      color: #fff;
+      border-color: transparent;
+    }
+
+    .order-total-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 0 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .order-total-row .l {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .order-total-row .amt {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--gold);
+    }
+
+    .confirm-box {
+      text-align: center;
+      padding: 24px 10px 10px;
+    }
+
+    .confirm-box .check {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--gold-soft);
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      font-size: 28px;
+    }
+
+    .confirm-box h3 {
+      font-size: 22px;
+      font-weight: 800;
+      margin: 0 0 8px;
+    }
+
+    .confirm-box p {
+      color: var(--muted);
+      font-size: 13.5px;
+      margin: 0 0 20px;
+      line-height: 1.5;
+    }
+
+    .order-ref-pill {
+      display: inline-block;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 15px;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: 8px;
+      background: var(--card-2);
+      border: 1px solid var(--border);
+      margin-bottom: 16px;
+      color: var(--blue);
+    }
+
+    /* ---------- staff / back office ---------- */
+    .staff-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 26px 22px;
+      margin-top: 16px;
+    }
+
+    .staff-card .eyebrow-row {
+      color: var(--blue);
+    }
+
+    .staff-card h2 {
+      font-size: 24px;
+      font-weight: 800;
+      margin: 0 0 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .staff-card .desc {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+      margin: 0 0 22px;
+    }
+
+    .demo-hint {
+      text-align: center;
+      font-size: 12.5px;
+      color: var(--muted);
+      margin-top: 16px;
+    }
+
+    .demo-hint b {
+      color: var(--ink);
+    }
+
+    .back-shop-link {
+      display: block;
+      text-align: center;
+      margin-top: 14px;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--blue);
+      cursor: pointer;
+    }
+
+    .err-text {
+      color: var(--coral);
+      font-size: 12.5px;
+      margin-top: 8px;
+      display: none;
+    }
+
+    .tabs-row {
+      display: flex;
+      gap: 8px;
+      margin: 18px 0 22px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+    }
+
+    .tab-pill {
+      padding: 9px 17px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      border: 1px solid var(--border);
+      background: var(--card-2);
+      color: var(--muted);
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    .tab-pill.active {
+      background: var(--ink);
+      color: var(--bg);
+      border-color: transparent;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 26px;
+    }
+
+    .stat-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .stat-box .l {
+      font-size: 10.5px;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 8px;
+    }
+
+    .stat-box .n {
+      font-size: 24px;
+      font-weight: 800;
+      margin: 0;
+      letter-spacing: -0.02em;
+      color: var(--gold);
+    }
+
+    .empty-state {
+      text-align: center;
+      color: var(--muted);
+      padding: 46px 16px;
+      font-size: 14.5px;
+      line-height: 1.6;
+    }
+
+    .log-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px 18px;
+      margin-bottom: 12px;
+    }
+
+    .log-item .top {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 4px;
+      align-items: center;
+    }
+
+    .log-item .sub {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .status-pill {
+      font-size: 10.5px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: var(--green-soft);
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: .03em;
+    }
+
+    .status-pill.pending {
+      background: var(--gold-soft);
+      color: var(--gold);
+    }
+
+    .status-pill.dispatched {
+      background: rgba(108, 147, 239, .12);
+      color: var(--blue);
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(80px);
+      background: var(--navy);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 999px;
+      font-size: 13.5px;
+      font-weight: 700;
+      z-index: 100;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      pointer-events: none;
+      transition: all .25s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    footer.site {
+      max-width: 760px;
+      margin: 40px auto 0;
+      padding: 22px 20px calc(22px + env(safe-area-inset-bottom, 0px));
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--muted-2);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: 100%;
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    /* Phone visual SVG rendering */
+    .phone-render {
+      width: 100%;
+      max-width: 240px;
+      height: auto;
+      filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.35));
+    }
+
+    .thumb-render {
+      width: 52px;
+      height: auto;
+      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    }
+
+    /* Real product image styles */
+    .product-img {
+      width: 100%;
+      max-width: 240px;
+      height: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 14px 32px rgba(0, 0, 0, 0.28));
+      border-radius: 4px;
+      transition: transform .3s ease;
+    }
+
+    .feature-card:hover .product-img {
+      transform: scale(1.03) translateY(-4px);
+    }
+
+    .thumb-img {
+      width: 72px;
+      height: 90px;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.22));
+      border-radius: 3px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="top">
+    <div class="brand" onclick="goHome()" title="iConnect Home">
+      <div class="mark">iC</div>
+      <div class="word">
+        <p class="t1">iConnect</p>
+        <p class="t2">iPhones only • ZAR</p>
+      </div>
+    </div>
+    <div class="top-actions" id="headerActions">
+      <button class="icon-btn" onclick="toggleTheme()" title="Toggle Dark/Light Mode" id="themeToggleBtn">
+        <span id="themeIcon">☀️</span>
+      </button>
+      <button class="icon-btn" onclick="openCart()" title="View Shopping Bag" id="cartBtn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="badge" id="cartBadge">0</span>
+      </button>
+      <button class="pill-btn" onclick="openStaffModal()" id="staffBtn">
+        <span>Portal</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HOME VIEW -->
+    <section id="view-home" class="view">
+
+      <div class="eyebrow-row">South Africa's Trusted Pre-Owned Apple Specialist</div>
+      <h1 class="headline">Certified Pristine iPhones.<br>Priced in Rand.</h1>
+      <p class="lede">
+        Every iPhone undergoes our rigorous 40-point technical diagnosis with genuine battery health, ICASA
+        certification, and our 12-month local swop-out guarantee. Nationwide insured dispatch via The Courier Guy.
+      </p>
+
+      <div class="cta-row">
+        <button class="btn primary" onclick="goBrowse()">Shop All iPhones &rarr;</button>
+        <button class="btn outline" onclick="openProduct('ip16promax')">Configure 16 Pro Max</button>
+      </div>
+
+      <!-- FEATURE SPOTLIGHT CARD -->
+      <div class="feature-card" onclick="openProduct('ip16promax')">
+        <div class="row1">
+          <span class="sku">FLAGSHIP SPOTLIGHT • A3296-ZA</span>
+          <span class="badge-outline">GRADE A+ PRISTINE</span>
+        </div>
+        <div class="phone-wrap">
+          <img src="images/iphone_16_pro_max.png" alt="iPhone 16 Pro Max – Desert Titanium" class="product-img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+          <svg class="phone-render" style="display:none;" viewBox="0 0 200 380" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="180" height="360" rx="38" fill="#2d2f34" stroke="#c2a792" stroke-width="4" />
+            <rect x="14" y="14" width="172" height="352" rx="34" fill="#141517" />
+            <rect x="18" y="18" width="164" height="344" rx="30" fill="url(#heroScreenGrad)" />
+            <rect x="74" y="27" width="52" height="15" rx="7.5" fill="#050505" />
+            <circle cx="84" cy="34.5" r="3.5" fill="#0d1117" />
+            <text x="100" y="80" text-anchor="middle" fill="#f4f1e9" font-size="14" font-weight="700"
+              font-family="'Manrope', sans-serif">iPhone 16 Pro Max</text>
+            <text x="100" y="98" text-anchor="middle" fill="#cda45e" font-size="11" font-weight="600"
+              font-family="'Manrope', sans-serif">Desert Titanium Edition</text>
+            <circle cx="100" cy="200" r="42" fill="url(#glowGrad)" opacity="0.4" />
+            <rect x="25" y="28" width="52" height="52" rx="14" fill="rgba(255,255,255,0.04)"
+              stroke="rgba(255,255,255,0.08)" />
+            <circle cx="41" cy="44" r="8" fill="#1c1e22" stroke="#b29782" stroke-width="2" />
+            <circle cx="41" cy="64" r="8" fill="#1c1e22" stroke="#b29782" stroke-width="2" />
+            <circle cx="61" cy="54" r="8" fill="#1c1e22" stroke="#b29782" stroke-width="2" />
+            <defs>
+              <linearGradient id="heroScreenGrad" x1="18" y1="18" x2="182" y2="362" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#192231" />
+                <stop offset="0.6" stop-color="#12151b" />
+                <stop offset="1" stop-color="#1e1814" />
+              </linearGradient>
+              <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+                <stop stop-color="#cda45e" stop-opacity="0.8" />
+                <stop offset="1" stop-color="#cda45e" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+          </svg>
+        </div>
+        <h3>iPhone 16 Pro Max & 16 Pro</h3>
+        <div class="spec-line">
+          <span>Processor / Display</span>
+          <span>A18 Pro (3nm) • 120Hz Super Retina XDR • Camera Control</span>
+        </div>
+        <div class="spec-line">
+          <span>Battery Health</span>
+          <span>98% – 100% Genuine Apple Health</span>
+        </div>
+        <div class="spec-line">
+          <span>Warranty & Testing</span>
+          <span>12-Month iConnect Swop-out • 40-Pt Certified</span>
+        </div>
+        <div class="price">
+          <div>
+            <span class="tag">STARTING AT</span><br>
+            R 21,999
+          </div>
+          <button class="pill-btn filled" style="align-self:flex-end;">Configure & Buy &rarr;</button>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-row">
+        <div class="stat">
+          <p class="n">40-Pt</p>
+          <p class="l">Hardware diagnostic & ICASA check</p>
+        </div>
+        <div class="stat">
+          <p class="n">12 Mo</p>
+          <p class="l">Comprehensive local warranty</p>
+        </div>
+        <div class="stat">
+          <p class="n">90%+</p>
+          <p class="l">Battery health minimum standard</p>
+        </div>
+        <div class="stat">
+          <p class="n">2-3 Day</p>
+          <p class="l">Nationwide insured courier</p>
+        </div>
+      </div>
+
+      <!-- Trust banner -->
+      <div class="trust-banner">
+        <div class="trust-icon">🛡️</div>
+        <div class="trust-text">
+          <h4>Safe & Verified South African Commerce</h4>
+          <p>Unlocked for Vodacom, MTN, Telkom & Cell C. Supports dual physical SIM + eSIM. Eco-box with fast-charge
+            braided cable included.</p>
+        </div>
+      </div>
+
+      <!-- Quick featured list -->
+      <div class="section-title-row">
+        <h2 class="section-title">Popular Models in Stock</h2>
+        <span class="view-all-link" onclick="goBrowse()">View all <span id="catalogCount">21</span> models &rarr;</span>
+      </div>
+
+      <div class="product-list" id="homeFeaturedList">
+        <!-- Injected via JS -->
+      </div>
+
+    </section>
+
+    <!-- BROWSE / CATALOG VIEW -->
+    <section id="view-browse" class="view hidden">
+
+      <div class="section-title-row">
+        <div>
+          <div class="eyebrow-row">Available Inventory</div>
+          <h2 class="section-title">Certified iPhone Catalog</h2>
+        </div>
+        <span class="badge-tag green">LIVE INVENTORY</span>
+      </div>
+
+      <div class="search-box-wrap">
+        <svg class="search-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" class="search-box" id="searchInput" placeholder="Search by model, chip, finish or storage..."
+          oninput="handleSearch()">
+      </div>
+
+      <div class="filters" id="filterPills">
+        <button class="filter-pill active" onclick="setFilter('all', this)">All iPhones (<span
+            id="countAll">21</span>)</button>
+        <button class="filter-pill" onclick="setFilter('16-series', this)">16 Series</button>
+        <button class="filter-pill" onclick="setFilter('15-series', this)">15 Series</button>
+        <button class="filter-pill" onclick="setFilter('14-series', this)">14 Series</button>
+        <button class="filter-pill" onclick="setFilter('13-series', this)">13 Series</button>
+        <button class="filter-pill" onclick="setFilter('12-earlier', this)">12 & Earlier</button>
+        <button class="filter-pill" onclick="setFilter('pro-models', this)">Pro & Pro Max</button>
+        <button class="filter-pill" onclick="setFilter('under-10k', this)">Under R10,000</button>
+        <button class="filter-pill" onclick="setFilter('budget', this)">Under R6,000</button>
+      </div>
+
+      <div class="product-list" id="catalogProductList">
+        <!-- Injected via JS -->
+      </div>
+
+    </section>
+
+    <!-- PRODUCT DETAIL & CONFIGURATOR VIEW -->
+    <section id="view-detail" class="view hidden">
+
+      <a class="back-link" onclick="goBrowse()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        Back to iPhone catalog
+      </a>
+
+      <div class="detail-card" id="detailCard">
+        <!-- Populated via renderProductDetail -->
+      </div>
+
+      <!-- Diagnostic Specs Table -->
+      <div class="spec-table" id="detailSpecsTable">
+        <!-- Populated via renderProductDetail -->
+      </div>
+
+      <!-- Configuration Panel -->
+      <div class="config-section">
+        <div class="config-label">
+          <span>1. Select Storage</span>
+          <span class="current-choice" id="selectedStorageLabel">128GB</span>
+        </div>
+        <div class="opt-row" id="storageOptions">
+          <!-- Rendered by JS -->
+        </div>
+
+        <div class="config-label">
+          <span>2. Select Color Finish</span>
+          <span class="current-choice" id="selectedColorLabel">Natural Titanium</span>
+        </div>
+        <div class="color-chip-wrap" id="colorOptions">
+          <!-- Rendered by JS -->
+        </div>
+
+        <div class="config-label">
+          <span>3. Certified Grade</span>
+          <span class="current-choice" id="selectedGradeLabel">Grade A+ Pristine</span>
+        </div>
+        <div class="opt-row" id="gradeOptions">
+          <!-- Rendered by JS -->
+        </div>
+
+        <div class="config-label">
+          <span>4. Quantity</span>
+        </div>
+        <div class="qty-stepper">
+          <button onclick="changeQty(-1)" aria-label="Decrease quantity">−</button>
+          <span class="n" id="detailQty">1</span>
+          <button onclick="changeQty(1)" aria-label="Increase quantity">+</button>
+        </div>
+
+        <div class="total-row">
+          <div>
+            <div class="l">Configured Price (VAT Incl.)</div>
+            <div style="font-size:11px; color:var(--muted);">Free Insured SA Shipping via The Courier Guy</div>
+          </div>
+          <div class="amt" id="detailTotalPrice">R 17,999</div>
+        </div>
+
+        <button class="btn primary block" id="addToBagBtn" onclick="addToCartFromDetail()">
+          Add to Shopping Bag • <span id="btnPriceLabel">R 17,999</span>
+        </button>
+      </div>
+
+    </section>
+
+    <!-- STAFF / BACK-OFFICE VIEW -->
+    <section id="view-staff" class="view hidden">
+
+      <div class="staff-card" id="staffAuthBox">
+        <div class="eyebrow-row">iConnect Admin Portal</div>
+        <h2>Internal Back Office</h2>
+        <p class="desc">Restricted portal for iConnect staff to review incoming orders, manage dispatch statuses with
+          The Courier Guy, and monitor Rand sales metrics.</p>
+
+        <div class="field-label">Employee Access PIN</div>
+        <input type="password" id="staffPinInput" class="text-field" placeholder="Enter PIN (Demo: 1234)" maxlength="8"
+          onkeydown="if(event.key==='Enter') verifyPin()">
+        <div class="err-text" id="pinError">Incorrect PIN. Please use demo PIN 1234.</div>
+
+        <div style="margin-top:16px;">
+          <button class="btn primary block" onclick="verifyPin()">Sign In to Dashboard</button>
+        </div>
+
+        <p class="demo-hint">Demo Access PIN: <b>1234</b></p>
+        <a class="back-shop-link" onclick="goHome()">&larr; Return to Customer Store</a>
+      </div>
+
+      <!-- Logged in staff dashboard -->
+      <div id="staffDashboard" class="hidden">
+        <div class="section-title-row" style="margin-top:8px;">
+          <div>
+            <div class="eyebrow-row">Staff Session Active</div>
+            <h2 class="section-title">Store Management Dashboard</h2>
+          </div>
+          <button class="pill-btn" onclick="logoutStaff()">Sign Out</button>
+        </div>
+
+        <div class="tabs-row">
+          <button class="tab-pill active" onclick="setStaffTab('metrics', this)">Metrics & Sales</button>
+          <button class="tab-pill" onclick="setStaffTab('orders', this)">Live Orders (<span
+              id="staffOrderCount">0</span>)</button>
+          <button class="tab-pill" onclick="setStaffTab('inventory', this)">Inventory Stock</button>
+        </div>
+
+        <!-- Tab: Metrics -->
+        <div id="staffTabMetrics">
+          <div class="stat-grid">
+            <div class="stat-box">
+              <div class="l">Total Revenue (ZAR)</div>
+              <div class="n" id="statRevenue">R 0</div>
+            </div>
+            <div class="stat-box">
+              <div class="l">Units Dispatched</div>
+              <div class="n" id="statUnits">0</div>
+            </div>
+            <div class="stat-box">
+              <div class="l">Active Orders</div>
+              <div class="n" id="statActiveOrders">0</div>
+            </div>
+            <div class="stat-box">
+              <div class="l">Average Basket</div>
+              <div class="n" id="statAvgBasket">R 0</div>
+            </div>
+          </div>
+
+          <div class="detail-card" style="margin-top:16px;">
+            <h3 style="margin:0 0 8px; font-size:16px;">Demo Tools</h3>
+            <p style="font-size:12.5px; color:var(--muted); margin:0 0 14px;">Generate realistic mock orders or reset
+              local storage data.</p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <button class="btn outline" onclick="injectMockOrder()">+ Create Sample Order</button>
+              <button class="btn outline" onclick="resetDemoData()" style="color:var(--coral);">Reset Demo Data</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab: Orders -->
+        <div id="staffTabOrders" class="hidden">
+          <div id="staffOrdersList">
+            <!-- Filled by JS -->
+          </div>
+        </div>
+
+        <!-- Tab: Inventory -->
+        <div id="staffTabInventory" class="hidden">
+          <div class="product-list" id="staffInventoryList">
+            <!-- Filled by JS -->
+          </div>
+        </div>
+
+        <a class="back-shop-link" onclick="goHome()" style="margin-top:24px;">&larr; Switch Back to Customer Store</a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- CART DRAWER OVERLAY -->
+  <div class="overlay" id="cartOverlay" onclick="handleOverlayClick(event, 'cartOverlay')">
+    <div class="sheet" id="cartSheet">
+      <div class="sheet-head">
+        <h2>Shopping Bag</h2>
+        <button class="close-x" onclick="closeCart()" aria-label="Close Shopping Bag">&times;</button>
+      </div>
+
+      <div id="cartItemsList">
+        <!-- Items dynamically populated -->
+      </div>
+
+      <div id="cartFooter" class="hidden">
+        <div class="order-total-row">
+          <div>
+            <div class="l">Subtotal</div>
+            <div style="font-size:11px; color:var(--muted);">Delivery: Free Nationwide</div>
+          </div>
+          <div class="amt" id="cartTotalAmt">R 0</div>
+        </div>
+        <button class="btn primary block" onclick="openCheckout()">Proceed to Checkout &rarr;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHECKOUT MODAL OVERLAY -->
+  <div class="overlay" id="checkoutOverlay" onclick="handleOverlayClick(event, 'checkoutOverlay')">
+    <div class="sheet">
+      <div class="sheet-head">
+        <h2>Secure Checkout</h2>
+        <button class="close-x" onclick="closeCheckout()" aria-label="Close Checkout">&times;</button>
+      </div>
+
+      <form id="checkoutForm" onsubmit="handlePlaceOrder(event)">
+        <div class="field-label">Full Name</div>
+        <input type="text" class="text-field" id="custName" placeholder="e.g. Sipho Ndlovu" required>
+
+        <div style="display:flex; gap:10px;">
+          <div style="flex:1;">
+            <div class="field-label">South African Mobile</div>
+            <input type="tel" class="text-field" id="custPhone" placeholder="082 123 4567" required>
+          </div>
+          <div style="flex:1;">
+            <div class="field-label">Email Address</div>
+            <input type="email" class="text-field" id="custEmail" placeholder="name@example.co.za" required>
+          </div>
+        </div>
+
+        <div class="field-label">Delivery Street Address</div>
+        <input type="text" class="text-field" id="custAddress" placeholder="Street number and name, Suburb" required>
+
+        <div style="display:flex; gap:10px;">
+          <div style="flex:1;">
+            <div class="field-label">City</div>
+            <input type="text" class="text-field" id="custCity" placeholder="Johannesburg" required>
+          </div>
+          <div style="flex:1;">
+            <div class="field-label">Postal Code</div>
+            <input type="text" class="text-field" id="custPostal" placeholder="2196" required>
+          </div>
+        </div>
+
+        <div class="field-label">Province</div>
+        <select class="text-field" id="custProvince" required>
+          <option value="Gauteng">Gauteng</option>
+          <option value="Western Cape">Western Cape</option>
+          <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+          <option value="Eastern Cape">Eastern Cape</option>
+          <option value="Free State">Free State</option>
+          <option value="Mpumalanga">Mpumalanga</option>
+          <option value="Limpopo">Limpopo</option>
+          <option value="North West">North West</option>
+          <option value="Northern Cape">Northern Cape</option>
+        </select>
+
+        <div class="field-label">Payment Method</div>
+        <div class="pay-row">
+          <div class="pay-pill sel" onclick="selectPayment('Instant EFT / Ozow', this)">Instant EFT (Ozow)</div>
+          <div class="pay-pill" onclick="selectPayment('Credit/Debit Card (PayFast)', this)">Credit Card</div>
+          <div class="pay-pill" onclick="selectPayment('PayFlex 4x Interest-Free', this)">PayFlex (4x)</div>
+          <div class="pay-pill" onclick="selectPayment('Collect in Sandton Studio', this)">Collect (Sandton)</div>
+        </div>
+
+        <div class="order-total-row">
+          <div>
+            <div class="l">Total Amount Due</div>
+            <div style="font-size:11px; color:var(--muted);">Includes 15% VAT & Courier Insurance</div>
+          </div>
+          <div class="amt" id="checkoutTotalAmt">R 0</div>
+        </div>
+
+        <button type="submit" class="btn primary block">Confirm & Place Order</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ORDER CONFIRMATION MODAL -->
+  <div class="overlay" id="confirmOverlay" onclick="handleOverlayClick(event, 'confirmOverlay')">
+    <div class="sheet">
+      <div class="confirm-box">
+        <div class="check">✓</div>
+        <h3>Order Successfully Placed!</h3>
+        <p>Thank you for choosing iConnect. Your certified iPhone is being prepared for diagnostic sign-off and
+          dispatch.</p>
+
+        <div class="order-ref-pill" id="confirmOrderRef">#IC-98214</div>
+
+        <div class="spec-table" style="text-align:left; margin-bottom:20px;">
+          <div class="spec-row">
+            <span>Recipient</span>
+            <span id="confirmCustName">-</span>
+          </div>
+          <div class="spec-row">
+            <span>Delivery Details</span>
+            <span id="confirmAddress">-</span>
+          </div>
+          <div class="spec-row">
+            <span>Payment Selected</span>
+            <span id="confirmPaymentMethod">-</span>
+          </div>
+          <div class="spec-row">
+            <span>Total Paid (ZAR)</span>
+            <span id="confirmTotal" style="color:var(--gold); font-weight:800;">-</span>
+          </div>
+        </div>
+
+        <button class="btn primary block" onclick="closeConfirmModal()">Continue Shopping</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST MESSAGE -->
+  <div class="toast" id="toastMessage">
+    <span>✓</span>
+    <span id="toastText">Added to bag</span>
+  </div>
+
+  <!-- SITE FOOTER -->
+  <footer class="site">
+    <div class="footer-row">
+      <div><b>iConnect South Africa (Pty) Ltd</b> • Certified iPhones in Rand</div>
+      <div>Johannesburg • Cape Town • Durban</div>
+    </div>
+    <div>
+      All devices are ICASA approved, sanitized, and supplied with a 12-month local warranty. "iPhone", "Apple", and
+      "Super Retina" are trademarks of Apple Inc. iConnect is an independent certified specialist.
+    </div>
+  </footer>
+
+  <script>
+    /* =========================================================
+       1. INVENTORY DATA & CATALOG
+    ========================================================= */
+    const IPHONE_CATALOG = [
+      // --- 16 SERIES ---
+      {
+        id: 'ip16promax',
+        name: 'iPhone 16 Pro Max',
+        image: 'images/iphone_16_pro_max.png',
+        category: '16-series',
+        sku: 'A3296-ZA',
+        basePrice: 24999,
+        badge: 'FLAGSHIP GRADE A+',
+        tag: 'TITANIUM',
+        specsSummary: '6.9" Super Retina XDR 120Hz • A18 Pro (3nm) • Camera Control • 5x Telephoto',
+        batteryHealth: '98% – 100% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '256GB', add: 0 },
+          { size: '512GB', add: 2400 },
+          { size: '1TB', add: 5200 }
+        ],
+        colors: [
+          { name: 'Desert Titanium', hex: '#c2a792', phoneColor: '#b29782' },
+          { name: 'Natural Titanium', hex: '#9a968f', phoneColor: '#8a867f' },
+          { name: 'White Titanium', hex: '#f2f2f2', phoneColor: '#e2e2e2' },
+          { name: 'Black Titanium', hex: '#303032', phoneColor: '#242426' }
+        ],
+        specDetails: {
+          chip: 'Apple A18 Pro (6-core GPU, Hardware Ray Tracing, 16-core NPU)',
+          display: '6.9" Super Retina XDR OLED, ProMotion 120Hz, Ceramic Shield 2.0',
+          camera: '48MP Fusion + 48MP Ultra-wide + 12MP 5x Tetraprism Telephoto',
+          battery: 'Inspected 98%+ health • USB-C 3.0 Fast Charging • 33hr Video',
+          network: 'Unlocked ICASA: Vodacom, MTN, Telkom, Cell C 5G + Dual eSIM',
+          packaging: 'iConnect Eco-box with braided 60W USB-C cable & SIM tool',
+          warranty: '12-Month Comprehensive Swop-Out Guarantee'
+        }
+      },
+      {
+        id: 'ip16pro',
+        name: 'iPhone 16 Pro',
+        image: 'images/iphone_16_pro.png',
+        category: '16-series',
+        sku: 'A3293-ZA',
+        basePrice: 21999,
+        badge: 'PRO GRADE A+',
+        tag: 'NEW ARRIVAL',
+        specsSummary: '6.3" ProMotion 120Hz • A18 Pro • Grade 5 Titanium • Camera Control',
+        batteryHealth: '98% – 100% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '128GB', add: 0 },
+          { size: '256GB', add: 1800 },
+          { size: '512GB', add: 3800 },
+          { size: '1TB', add: 6200 }
+        ],
+        colors: [
+          { name: 'Desert Titanium', hex: '#c2a792', phoneColor: '#b29782' },
+          { name: 'Natural Titanium', hex: '#9a968f', phoneColor: '#8a867f' },
+          { name: 'White Titanium', hex: '#f2f2f2', phoneColor: '#e2e2e2' },
+          { name: 'Black Titanium', hex: '#303032', phoneColor: '#242426' }
+        ],
+        specDetails: {
+          chip: 'Apple A18 Pro (Next-Gen Neural Engine & Hardware Ray Tracing)',
+          display: '6.3" Super Retina XDR, ProMotion 1-120Hz, Always-On Display',
+          camera: '48MP Fusion + 48MP Ultra-wide + 12MP 5x Optical Zoom + Camera Control',
+          battery: 'Inspected 98%+ genuine Apple battery health • USB-C',
+          network: 'Unlocked: Vodacom, MTN, Telkom, Cell C 5G',
+          packaging: 'iConnect Eco-box with braided USB-C cable',
+          warranty: '12-Month Comprehensive Swop-Out Guarantee'
+        }
+      },
+      {
+        id: 'ip16plus',
+        name: 'iPhone 16 Plus',
+        image: 'images/iphone_16_plus.png',
+        category: '16-series',
+        sku: 'A3290-ZA',
+        basePrice: 17499,
+        badge: 'MAX BATTERY',
+        tag: 'NEW ARRIVAL',
+        specsSummary: '6.7" Super Retina • A18 Chip • Camera Control • 27-Hour Battery',
+        batteryHealth: '97% – 100% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '128GB', add: 0 },
+          { size: '256GB', add: 1600 },
+          { size: '512GB', add: 3400 }
+        ],
+        colors: [
+          { name: 'Ultramarine', hex: '#4860b8', phoneColor: '#3850a8' },
+          { name: 'Teal', hex: '#5da8a0', phoneColor: '#4c978f' },
+          { name: 'Pink', hex: '#e884a2', phoneColor: '#d67290' },
+          { name: 'White', hex: '#f0f2f5', phoneColor: '#dedfe2' },
+          { name: 'Black', hex: '#25282d', phoneColor: '#1b1e22' }
+        ],
+        specDetails: {
+          chip: 'Apple A18 (3nm, 6-core CPU, 5-core GPU, Apple Intelligence)',
+          display: '6.7" Super Retina XDR with Dynamic Island • 2000 nits',
+          camera: '48MP 2-in-1 Fusion Camera + 12MP Ultra-wide with Macro photography',
+          battery: 'Inspected 97%+ battery health • All-weekend battery life',
+          network: 'Unlocked ICASA: Vodacom, MTN, Telkom, Cell C',
+          packaging: 'iConnect Eco-box with braided USB-C cable',
+          warranty: '12-Month Certified Warranty'
+        }
+      },
+      {
+        id: 'ip16',
+        name: 'iPhone 16',
+        image: 'images/iphone_16.png',
+        category: '16-series',
+        sku: 'A3287-ZA',
+        basePrice: 15999,
+        badge: 'DYNAMIC CAMERA',
+        tag: 'APPLE INTELLIGENCE',
+        specsSummary: '6.1" Super Retina • A18 Chip • Action Button & Camera Control',
+        batteryHealth: '97% – 100% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '128GB', add: 0 },
+          { size: '256GB', add: 1500 },
+          { size: '512GB', add: 3200 }
+        ],
+        colors: [
+          { name: 'Ultramarine', hex: '#4860b8', phoneColor: '#3850a8' },
+          { name: 'Teal', hex: '#5da8a0', phoneColor: '#4c978f' },
+          { name: 'Pink', hex: '#e884a2', phoneColor: '#d67290' },
+          { name: 'White', hex: '#f0f2f5', phoneColor: '#dedfe2' },
+          { name: 'Black', hex: '#25282d', phoneColor: '#1b1e22' }
+        ],
+        specDetails: {
+          chip: 'Apple A18 (3nm second generation)',
+          display: '6.1" Super Retina XDR OLED, 2000 nits peak outdoor brightness',
+          camera: '48MP Fusion Camera + Camera Control capacitive tactile sensor',
+          battery: 'Inspected 97%+ health • USB-C Fast Charge',
+          network: 'Unlocked ICASA Approved: All SA networks',
+          packaging: 'iConnect Eco-box with braided USB-C cable',
+          warranty: '12-Month Certified Warranty'
+        }
+      },
+
+      // --- 15 SERIES ---
+      {
+        id: 'ip15promax',
+        name: 'iPhone 15 Pro Max',
+        image: 'images/iphone_15_pro_max.png',
+        category: '15-series',
+        sku: 'A3106-ZA',
+        basePrice: 19499,
+        badge: '5X TELEPHOTO',
+        tag: 'TITANIUM FLAGSHIP',
+        specsSummary: '6.7" Super Retina XDR • A17 Pro (3nm) • 5x Optical Periscope • 120Hz',
+        batteryHealth: '94% – 99% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '256GB', add: 0 },
+          { size: '512GB', add: 2200 },
+          { size: '1TB', add: 4600 }
+        ],
+        colors: [
+          { name: 'Natural Titanium', hex: '#8a8885', phoneColor: '#7a7772' },
+          { name: 'Blue Titanium', hex: '#3b4352', phoneColor: '#2f3642' },
+          { name: 'White Titanium', hex: '#e3e4e5', phoneColor: '#d6d7d9' },
+          { name: 'Black Titanium', hex: '#2c2c2e', phoneColor: '#242426' }
+        ],
+        specDetails: {
+          chip: 'Apple A17 Pro (6-core GPU, Hardware Ray Tracing)',
+          display: '6.7" Super Retina XDR OLED, 120Hz ProMotion, Always-On',
+          camera: '48MP Main + 12MP Ultra-wide + 12MP 5x Tetraprism Zoom',
+          battery: 'Tested 94%+ health • USB-C 3.0 Transfer Speed (10Gbps)',
+          network: 'Unlocked: Vodacom, MTN, Telkom, Cell C',
+          packaging: 'iConnect Eco-box with braided USB-C cable',
+          warranty: '12-Month Certified Warranty'
+        }
+      },
+      {
+        id: 'ip15pro',
+        name: 'iPhone 15 Pro',
+        image: 'images/iphone_15_pro.png',
+        category: '15-series',
+        sku: 'A3102-ZA',
+        basePrice: 16999,
+        badge: 'FLAGSHIP GRADE A+',
+        tag: 'TITANIUM',
+        specsSummary: '6.1" Super Retina XDR • A17 Pro (3nm) • Titanium Frame • 120Hz',
+        batteryHealth: '94% – 98% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '128GB', add: 0 },
+          { size: '256GB', add: 1600 },
+          { size: '512GB', add: 3400 },
+          { size: '1TB', add: 5400 }
+        ],
+        colors: [
+          { name: 'Natural Titanium', hex: '#8a8885', phoneColor: '#7a7772' },
+          { name: 'Black Titanium', hex: '#2c2c2e', phoneColor: '#242426' },
+          { name: 'White Titanium', hex: '#e3e4e5', phoneColor: '#d6d7d9' },
+          { name: 'Blue Titanium', hex: '#3b4352', phoneColor: '#2f3642' }
+        ],
+        specDetails: {
+          chip: 'Apple A17 Pro (6-core GPU, Hardware Ray Tracing)',
+          display: 'Super Retina XDR OLED, ProMotion 120Hz, Always-On',
+          camera: '48MP Main + 12MP Ultra-wide + 12MP Telephoto 3x',
+          battery: 'Inspected 94%+ health • Fast USB-C Charging',
+          network: 'Unlocked ICASA: Vodacom, MTN, Telkom, Cell C',
+          packaging: 'iConnect Eco-box with braided USB-C cable & SIM key',
+          warranty: '12-Month Comprehensive Swop-Out Guarantee'
+        }
+      },
+      {
+        id: 'ip15plus',
+        name: 'iPhone 15 Plus',
+        category: '15-series',
+        sku: 'A3094-ZA',
+        basePrice: 14499,
+        badge: 'BIG SCREEN',
+        tag: 'POPULAR',
+        specsSummary: '6.7" Super Retina • Dynamic Island • 48MP Camera • 26hr Battery',
+        batteryHealth: '94% – 98% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '128GB', add: 0 },
+          { size: '256GB', add: 1400 },
+          { size: '512GB', add: 3000 }
+        ],
+        colors: [
+          { name: 'Black', hex: '#202124', phoneColor: '#1d1e20' },
+          { name: 'Blue', hex: '#c5d5e4', phoneColor: '#b4c7d8' },
+          { name: 'Green', hex: '#d0e2d3', phoneColor: '#bfd3c2' },
+          { name: 'Pink', hex: '#f7d3d6', phoneColor: '#e7c2c5' },
+          { name: 'Yellow', hex: '#f9e8a2', phoneColor: '#e8d890' }
+        ],
+        specDetails: {
+          chip: 'Apple A16 Bionic (5-core GPU)',
+          display: '6.7" Super Retina XDR with Dynamic Island',
+          camera: '48MP Dual System with 2x Telephoto quality zoom',
+          battery: 'Tested 94%+ health • USB-C connector',
+          network: 'Unlocked: All SA Networks',
+          packaging: 'iConnect Eco-box with USB-C cable',
+          warranty: '12-Month Certified Warranty'
+        }
+      },
+      {
+        id: 'ip15',
+        name: 'iPhone 15',
+        category: '15-series',
+        sku: 'A3090-ZA',
+        basePrice: 12999,
+        badge: 'DYNAMIC ISLAND',
+        tag: 'BESTSELLER',
+        specsSummary: '6.1" Super Retina • Dynamic Island • 48MP Main Camera • USB-C',
+        batteryHealth: '93% – 98% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '128GB', add: 0 },
+          { size: '256GB', add: 1400 },
+          { size: '512GB', add: 2900 }
+        ],
+        colors: [
+          { name: 'Black', hex: '#202124', phoneColor: '#1d1e20' },
+          { name: 'Blue', hex: '#c5d5e4', phoneColor: '#b4c7d8' },
+          { name: 'Green', hex: '#d0e2d3', phoneColor: '#bfd3c2' },
+          { name: 'Yellow', hex: '#f9e8a2', phoneColor: '#e8d890' },
+          { name: 'Pink', hex: '#f7d3d6', phoneColor: '#e7c2c5' }
+        ],
+        specDetails: {
+          chip: 'Apple A16 Bionic (5-core GPU)',
+          display: 'Super Retina XDR with Dynamic Island',
+          camera: '48MP Dual Camera System with 2x Telephoto optical zoom',
+          battery: 'Tested 93%+ health • USB-C connector',
+          network: 'Unlocked: All South African networks + eSIM',
+          packaging: 'iConnect Eco-box with USB-C cable',
+          warranty: '12-Month Certified Warranty'
+        }
+      },
+
+      // --- 14 SERIES ---
+      {
+        id: 'ip14promax',
+        name: 'iPhone 14 Pro Max',
+        category: '14-series',
+        sku: 'A2894-ZA',
+        basePrice: 16499,
+        badge: 'DYNAMIC ISLAND',
+        tag: 'HIGH DEMAND',
+        specsSummary: '6.7" Super Retina XDR 120Hz • A16 Bionic • 48MP Pro Triple Camera',
+        batteryHealth: '92% – 97% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '128GB', add: 0 },
+          { size: '256GB', add: 1500 },
+          { size: '512GB', add: 3200 },
+          { size: '1TB', add: 4800 }
+        ],
+        colors: [
+          { name: 'Deep Purple', hex: '#483f51', phoneColor: '#3c3444' },
+          { name: 'Space Black', hex: '#202021', phoneColor: '#1b1b1c' },
+          { name: 'Gold', hex: '#f0e5d3', phoneColor: '#e2d7c4' },
+          { name: 'Silver', hex: '#e8e8ea', phoneColor: '#d6d6d8' }
+        ],
+        specDetails: {
+          chip: 'Apple A16 Bionic (4nm)',
+          display: '6.7" Super Retina XDR with ProMotion 120Hz & Always-On',
+          camera: '48MP Triple Lens with Photonic Engine & Action Mode',
+          battery: 'Tested 92%+ health • Lightning Fast Charge',
+          network: 'Unlocked: Vodacom, MTN, Telkom, Cell C',
+          packaging: 'iConnect Eco-box with cable',
+          warranty: '12-Month Certified Warranty'
+        }
+      },
+      {
+        id: 'ip14pro',
+        name: 'iPhone 14 Pro',
+        category: '14-series',
+        sku: 'A2890-ZA',
+        basePrice: 14499,
+        badge: 'PRO SERIES',
+        tag: 'HIGH DEMAND',
+        specsSummary: '6.1" Super Retina XDR 120Hz • A16 Bionic • 48MP Pro System',
+        batteryHealth: '92% – 97% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '128GB', add: 0 },
+          { size: '256GB', add: 1400 },
+          { size: '512GB', add: 3000 }
+        ],
+        colors: [
+          { name: 'Deep Purple', hex: '#483f51', phoneColor: '#3c3444' },
+          { name: 'Space Black', hex: '#202021', phoneColor: '#1b1b1c' },
+          { name: 'Gold', hex: '#f0e5d3', phoneColor: '#e2d7c4' },
+          { name: 'Silver', hex: '#e8e8ea', phoneColor: '#d6d6d8' }
+        ],
+        specDetails: {
+          chip: 'Apple A16 Bionic (4nm)',
+          display: 'Super Retina XDR with ProMotion & Always-On',
+          camera: '48MP Triple Lens Camera + Photonic Engine',
+          battery: 'Tested 92%+ health • Lightning Fast Charge',
+          network: 'Unlocked: Vodacom, MTN, Telkom, Cell C',
+          packaging: 'iConnect Box with Lightning cable',
+          warranty: '12-Month Certified Warranty'
+        }
+      },
+      {
+        id: 'ip14plus',
+        name: 'iPhone 14 Plus',
+        category: '14-series',
+        sku: 'A2886-ZA',
+        basePrice: 11999,
+        badge: 'BIG SCREEN SAVER',
+        tag: 'LONG BATTERY',
+        specsSummary: '6.7" Super Retina XDR • A15 Bionic • 26hr Video Playback',
+        batteryHealth: '91% – 96% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '128GB', add: 0 },
+          { size: '256GB', add: 1300 },
+          { size: '512GB', add: 2800 }
+        ],
+        colors: [
+          { name: 'Midnight', hex: '#1e242b', phoneColor: '#181d23' },
+          { name: 'Starlight', hex: '#f9f6ef', phoneColor: '#e8e5de' },
+          { name: 'Blue', hex: '#9eb4c9', phoneColor: '#8da3b8' },
+          { name: 'Purple', hex: '#e3d7e8', phoneColor: '#d0c4d5' },
+          { name: 'PRODUCT(RED)', hex: '#e02b3a', phoneColor: '#c2202e' }
+        ],
+        specDetails: {
+          chip: 'Apple A15 Bionic (5-core GPU)',
+          display: '6.7" Super Retina XDR OLED',
+          camera: '12MP Dual Cameras with Action Mode & Photonic Engine',
+          battery: 'Tested 91%+ health • Longest battery in 14 series',
+          network: 'Unlocked ICASA Approved',
+          packaging: 'iConnect Eco-box with cable',
+          warranty: '12-Month Certified Warranty'
+        }
+      },
+      {
+        id: 'ip14',
+        name: 'iPhone 14',
+        category: '14-series',
+        sku: 'A2882-ZA',
+        basePrice: 10499,
+        badge: 'EXCELLENT VALUE',
+        tag: 'POPULAR',
+        specsSummary: '6.1" Super Retina • A15 Bionic • Photonic Engine & Crash Detection',
+        batteryHealth: '91% – 96% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '128GB', add: 0 },
+          { size: '256GB', add: 1200 },
+          { size: '512GB', add: 2600 }
+        ],
+        colors: [
+          { name: 'Midnight', hex: '#1e242b', phoneColor: '#181d23' },
+          { name: 'Starlight', hex: '#f9f6ef', phoneColor: '#e8e5de' },
+          { name: 'Blue', hex: '#9eb4c9', phoneColor: '#8da3b8' },
+          { name: 'Purple', hex: '#e3d7e8', phoneColor: '#d0c4d5' },
+          { name: 'Yellow', hex: '#fde276', phoneColor: '#edd265' }
+        ],
+        specDetails: {
+          chip: 'Apple A15 Bionic (5-core GPU version)',
+          display: '6.1" Super Retina XDR OLED',
+          camera: '12MP Dual System with Photonic Engine & Action Mode',
+          battery: 'Tested 91%+ health • All-day battery',
+          network: 'Unlocked ICASA Approved',
+          packaging: 'iConnect Eco-box with cable',
+          warranty: '12-Month Certified Warranty'
+        }
+      },
+
+      // --- 13 SERIES ---
+      {
+        id: 'ip13promax',
+        name: 'iPhone 13 Pro Max',
+        category: '13-series',
+        sku: 'A2643-ZA',
+        basePrice: 12999,
+        badge: 'PROMOTION 120Hz',
+        tag: 'BATTERY HERO',
+        specsSummary: '6.7" 120Hz OLED • A15 Bionic • 3x Telephoto Macro • Legend Battery',
+        batteryHealth: '90% – 95% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '128GB', add: 0 },
+          { size: '256GB', add: 1300 },
+          { size: '512GB', add: 2700 },
+          { size: '1TB', add: 4200 }
+        ],
+        colors: [
+          { name: 'Sierra Blue', hex: '#9db4c7', phoneColor: '#8ca3b6' },
+          { name: 'Graphite', hex: '#3d3c3a', phoneColor: '#302f2e' },
+          { name: 'Alpine Green', hex: '#48564a', phoneColor: '#3c483e' },
+          { name: 'Gold', hex: '#fae7cf', phoneColor: '#e9d6be' },
+          { name: 'Silver', hex: '#f2f3f4', phoneColor: '#dfe0e2' }
+        ],
+        specDetails: {
+          chip: 'Apple A15 Bionic (5-core GPU)',
+          display: '6.7" Super Retina XDR with ProMotion 120Hz',
+          camera: 'Triple 12MP System with Macro, Cinematic mode & 3x optical zoom',
+          battery: 'Tested 90%+ health • Exceptional endurance',
+          network: 'Unlocked ICASA Approved',
+          packaging: 'iConnect Eco-box with cable',
+          warranty: '12-Month Certified Warranty'
+        }
+      },
+      {
+        id: 'ip13pro',
+        name: 'iPhone 13 Pro',
+        category: '13-series',
+        sku: 'A2638-ZA',
+        basePrice: 11499,
+        badge: 'PROMOTION 120Hz',
+        tag: 'SWEET SPOT',
+        specsSummary: '6.1" 120Hz OLED • A15 Bionic • Telephoto Macro Camera',
+        batteryHealth: '90% – 95% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '128GB', add: 0 },
+          { size: '256GB', add: 1200 },
+          { size: '512GB', add: 2500 }
+        ],
+        colors: [
+          { name: 'Sierra Blue', hex: '#9db4c7', phoneColor: '#8ca3b6' },
+          { name: 'Graphite', hex: '#3d3c3a', phoneColor: '#302f2e' },
+          { name: 'Alpine Green', hex: '#48564a', phoneColor: '#3c483e' },
+          { name: 'Gold', hex: '#fae7cf', phoneColor: '#e9d6be' }
+        ],
+        specDetails: {
+          chip: 'Apple A15 Bionic',
+          display: 'Super Retina XDR with ProMotion 120Hz',
+          camera: 'Triple 12MP System with Macro Mode & Cinematic video',
+          battery: 'Tested 90%+ health guarantee',
+          network: 'Unlocked: All SA SIMs & eSIM',
+          packaging: 'iConnect Eco-box with cable',
+          warranty: '12-Month Certified Warranty'
+        }
+      },
+      {
+        id: 'ip13',
+        name: 'iPhone 13',
+        category: '13-series',
+        sku: 'A2633-ZA',
+        basePrice: 8499,
+        badge: 'UNDER R10K',
+        tag: 'VALUE CHAMPION',
+        specsSummary: '6.1" Super Retina • A15 Bionic • Diagonal Dual Camera',
+        batteryHealth: '90% – 95% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '128GB', add: 0 },
+          { size: '256GB', add: 1100 },
+          { size: '512GB', add: 2400 }
+        ],
+        colors: [
+          { name: 'Midnight', hex: '#171e27', phoneColor: '#121820' },
+          { name: 'Starlight', hex: '#fbf7ee', phoneColor: '#e9e5dc' },
+          { name: 'Pink', hex: '#f9d5d2', phoneColor: '#e6c3c0' },
+          { name: 'Blue', hex: '#376888', phoneColor: '#2b546e' },
+          { name: 'Green', hex: '#3e4f40', phoneColor: '#324034' }
+        ],
+        specDetails: {
+          chip: 'Apple A15 Bionic',
+          display: '6.1" Super Retina XDR',
+          camera: '12MP Dual Cameras with Sensor-shift OIS',
+          battery: 'Tested 90%+ health',
+          network: 'Unlocked ICASA Approved',
+          packaging: 'iConnect Eco-box with cable',
+          warranty: '12-Month Certified Warranty'
+        }
+      },
+      {
+        id: 'ip13mini',
+        name: 'iPhone 13 mini',
+        category: '13-series',
+        sku: 'A2628-ZA',
+        basePrice: 7499,
+        badge: 'POCKET HERO',
+        tag: 'COMPACT FLAGSHIP',
+        specsSummary: '5.4" Compact OLED • A15 Bionic • Sensor-Shift OIS • 140g Lightweight',
+        batteryHealth: '89% – 94% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '128GB', add: 0 },
+          { size: '256GB', add: 1000 },
+          { size: '512GB', add: 2200 }
+        ],
+        colors: [
+          { name: 'Midnight', hex: '#171e27', phoneColor: '#121820' },
+          { name: 'Starlight', hex: '#fbf7ee', phoneColor: '#e9e5dc' },
+          { name: 'Pink', hex: '#f9d5d2', phoneColor: '#e6c3c0' },
+          { name: 'Blue', hex: '#376888', phoneColor: '#2b546e' },
+          { name: 'Green', hex: '#3e4f40', phoneColor: '#324034' }
+        ],
+        specDetails: {
+          chip: 'Apple A15 Bionic (6-core CPU)',
+          display: '5.4" Super Retina XDR OLED (Compact 1080p)',
+          camera: '12MP Dual Cameras with Photographic Styles & Cinematic 1080p',
+          battery: 'Inspected 89%+ genuine battery health',
+          network: 'Unlocked ICASA Approved',
+          packaging: 'iConnect Eco-box with cable',
+          warranty: '12-Month Certified Warranty'
+        }
+      },
+
+      // --- 12 SERIES & LEGACY / VALUE CHAMPIONS ---
+      {
+        id: 'ip12promax',
+        name: 'iPhone 12 Pro Max',
+        category: '12-series',
+        sku: 'A2411-ZA',
+        basePrice: 8999,
+        badge: 'TRIPLE CAMERA',
+        tag: 'BIG SCREEN VALUE',
+        specsSummary: '6.7" Super Retina XDR • A14 Bionic • Stainless Steel • LiDAR Scanner',
+        batteryHealth: '88% – 93% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '128GB', add: 0 },
+          { size: '256GB', add: 1000 },
+          { size: '512GB', add: 2200 }
+        ],
+        colors: [
+          { name: 'Pacific Blue', hex: '#2c4d63', phoneColor: '#223e50' },
+          { name: 'Graphite', hex: '#39383b', phoneColor: '#2c2b2e' },
+          { name: 'Gold', hex: '#fae9d4', phoneColor: '#ebd6c0' },
+          { name: 'Silver', hex: '#f0f1f3', phoneColor: '#dedfe2' }
+        ],
+        specDetails: {
+          chip: 'Apple A14 Bionic (5nm)',
+          display: '6.7" Super Retina XDR OLED',
+          camera: 'Triple 12MP System + LiDAR Scanner for Night portraits',
+          battery: 'Inspected 88%+ health standard',
+          network: 'Unlocked: Vodacom, MTN, Telkom, Cell C 5G',
+          packaging: 'iConnect Eco-box with cable',
+          warranty: '12-Month Certified Warranty'
+        }
+      },
+      {
+        id: 'ip12pro',
+        name: 'iPhone 12 Pro',
+        category: '12-series',
+        sku: 'A2407-ZA',
+        basePrice: 7999,
+        badge: 'PRO CRAFT',
+        tag: 'STAINLESS STEEL',
+        specsSummary: '6.1" OLED Display • A14 Bionic • Triple 12MP Camera & LiDAR',
+        batteryHealth: '88% – 93% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '128GB', add: 0 },
+          { size: '256GB', add: 900 },
+          { size: '512GB', add: 2000 }
+        ],
+        colors: [
+          { name: 'Pacific Blue', hex: '#2c4d63', phoneColor: '#223e50' },
+          { name: 'Graphite', hex: '#39383b', phoneColor: '#2c2b2e' },
+          { name: 'Gold', hex: '#fae9d4', phoneColor: '#ebd6c0' },
+          { name: 'Silver', hex: '#f0f1f3', phoneColor: '#dedfe2' }
+        ],
+        specDetails: {
+          chip: 'Apple A14 Bionic (5nm)',
+          display: '6.1" Super Retina XDR OLED',
+          camera: 'Triple 12MP System (Ultra-wide, Wide, Telephoto) + LiDAR',
+          battery: 'Inspected 88%+ health guarantee',
+          network: 'Unlocked ICASA: All SA SIMs',
+          packaging: 'iConnect Eco-box with cable',
+          warranty: '12-Month Certified Warranty'
+        }
+      },
+      {
+        id: 'ip12',
+        name: 'iPhone 12',
+        category: '12-series',
+        sku: 'A2403-ZA',
+        basePrice: 6299,
+        badge: 'BUDGET 5G',
+        tag: 'BARGAIN',
+        specsSummary: '6.1" OLED Display • A14 Bionic • 5G Capable Ceramic Shield',
+        batteryHealth: '88% – 93% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '64GB', add: 0 },
+          { size: '128GB', add: 700 },
+          { size: '256GB', add: 1500 }
+        ],
+        colors: [
+          { name: 'Black', hex: '#1c1d1f', phoneColor: '#17181a' },
+          { name: 'White', hex: '#f7f6f2', phoneColor: '#e4e3df' },
+          { name: 'Blue', hex: '#1e3852', phoneColor: '#172d42' },
+          { name: 'Green', hex: '#d8e7cb', phoneColor: '#c5d4b8' },
+          { name: 'Purple', hex: '#b9b4d8', phoneColor: '#a6a0c7' }
+        ],
+        specDetails: {
+          chip: 'Apple A14 Bionic (5nm)',
+          display: '6.1" Super Retina XDR OLED',
+          camera: '12MP Ultra-Wide and Wide cameras with Night mode',
+          battery: 'Inspected 88%+ health',
+          network: 'Unlocked: Vodacom, MTN, Telkom, Cell C',
+          packaging: 'iConnect Eco-box with cable',
+          warranty: '12-Month Certified Warranty'
+        }
+      },
+      {
+        id: 'ip11',
+        name: 'iPhone 11',
+        category: '12-series',
+        sku: 'A2221-ZA',
+        basePrice: 4799,
+        badge: 'UNDER R5K',
+        tag: 'ENTRY SPECIAL',
+        specsSummary: '6.1" Liquid Retina HD • Apple A13 Bionic • Dual 12MP 4K Camera',
+        batteryHealth: '87% – 92% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '64GB', add: 0 },
+          { size: '128GB', add: 600 }
+        ],
+        colors: [
+          { name: 'Black', hex: '#1f2022', phoneColor: '#18191a' },
+          { name: 'White', hex: '#ecebe7', phoneColor: '#dbd9d4' },
+          { name: 'Purple', hex: '#d1cdde', phoneColor: '#beb9cd' },
+          { name: 'Green', hex: '#cbe0ce', phoneColor: '#b7ceba' },
+          { name: 'Yellow', hex: '#ffe680', phoneColor: '#ebd169' },
+          { name: 'PRODUCT(RED)', hex: '#d62828', phoneColor: '#ba1f1f' }
+        ],
+        specDetails: {
+          chip: 'Apple A13 Bionic (Third-generation Neural Engine)',
+          display: '6.1" Liquid Retina HD display with True Tone',
+          camera: 'Dual 12MP Ultra-Wide and Wide with Night mode & 4K60 video',
+          battery: 'Tested 87%+ health • Durable battery life',
+          network: 'Unlocked ICASA: Vodacom, MTN, Telkom, Cell C 4G LTE',
+          packaging: 'iConnect Eco-box with cable',
+          warranty: '12-Month Certified Warranty'
+        }
+      },
+      {
+        id: 'ipse3',
+        name: 'iPhone SE (3rd Gen / 5G)',
+        category: '12-series',
+        sku: 'A2783-ZA',
+        basePrice: 4299,
+        badge: 'TOUCH ID & 5G',
+        tag: 'POCKET VALUE',
+        specsSummary: '4.7" Retina HD • A15 Bionic Chip • Touch ID Home Button • 5G Speed',
+        batteryHealth: '88% – 94% Genuine Health',
+        inStock: true,
+        storageOptions: [
+          { size: '64GB', add: 0 },
+          { size: '128GB', add: 600 },
+          { size: '256GB', add: 1300 }
+        ],
+        colors: [
+          { name: 'Midnight', hex: '#1a1f26', phoneColor: '#14181f' },
+          { name: 'Starlight', hex: '#fbf7ee', phoneColor: '#e9e5dc' },
+          { name: 'PRODUCT(RED)', hex: '#bf0013', phoneColor: '#a40010' }
+        ],
+        specDetails: {
+          chip: 'Apple A15 Bionic (Same high-speed chip as iPhone 13)',
+          display: '4.7" Retina HD with True Tone & wide colour gamut',
+          camera: '12MP Wide camera with Smart HDR 4, Deep Fusion, Portrait mode',
+          battery: 'Tested 88%+ health • Qi wireless fast charging',
+          network: 'Unlocked 5G ICASA: Vodacom, MTN, Telkom, Cell C',
+          packaging: 'iConnect Eco-box with cable',
+          warranty: '12-Month Certified Warranty'
+        }
+      }
+    ];
+
+    const CONDITION_GRADES = [
+      { id: 'gradeAplus', name: 'Grade A+ Pristine (Like New)', priceDiff: 0, desc: 'Zero scratches, 95-100% battery, original box packaging' },
+      { id: 'gradeA', name: 'Grade A Excellent (Micro marks)', priceDiff: -700, desc: 'Invisible from arm length, 91-95% battery, fully certified' },
+      { id: 'gradeBplus', name: 'Grade B+ Value Saver', priceDiff: -1400, desc: 'Light cosmetic edge wear, 87-90% battery, same 12-mo warranty' }
+    ];
+
+    /* =========================================================
+       2. APPLICATION STATE
+    ========================================================= */
+    let currentView = 'home';
+    let activeCategory = 'all';
+    let currentSearch = '';
+    let activeProduct = null;
+
+    // Configurator selections
+    let selectedStorageIdx = 0;
+    let selectedColorIdx = 0;
+    let selectedGradeIdx = 0;
+    let selectedQty = 1;
+
+    // Cart State (stored in localStorage)
+    let cart = JSON.parse(localStorage.getItem('iConnect_cart') || '[]');
+
+    // Staff / Back Office State
+    let staffAuthenticated = sessionStorage.getItem('iConnect_staff_auth') === 'true';
+    let orders = JSON.parse(localStorage.getItem('iConnect_orders') || '[]');
+
+    // Initialize sample orders if empty
+    if (orders.length === 0) {
+      orders = [
+        {
+          id: 'IC-82194',
+          date: '2026-10-12 14:22',
+          customer: { name: 'Thabo Mokoena', phone: '083 459 1102', city: 'Sandton, Gauteng' },
+          items: [
+            { name: 'iPhone 15 Pro', storage: '256GB', color: 'Natural Titanium', grade: 'Grade A+ Pristine (Like New)', price: 19599, qty: 1 }
+          ],
+          paymentMethod: 'Instant EFT / Ozow',
+          status: 'Dispatched via Courier Guy',
+          total: 19599
+        },
+        {
+          id: 'IC-74910',
+          date: '2026-10-11 09:45',
+          customer: { name: 'Leanne Van Zyl', phone: '072 883 4901', city: 'Camps Bay, Western Cape' },
+          items: [
+            { name: 'iPhone 13', storage: '128GB', color: 'Midnight', grade: 'Grade A Excellent', price: 8299, qty: 1 }
+          ],
+          paymentMethod: 'Credit/Debit Card (PayFast)',
+          status: 'Delivered',
+          total: 8299
+        }
+      ];
+      localStorage.setItem('iConnect_orders', JSON.stringify(orders));
+    }
+
+    let selectedPaymentMethod = 'Instant EFT / Ozow';
+
+    /* =========================================================
+       3. CURRENCY & FORMATTING
+    ========================================================= */
+    function formatRand(amt) {
+      return 'R ' + amt.toLocaleString('en-ZA');
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById('toastMessage');
+      const text = document.getElementById('toastText');
+      text.innerText = message;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2600);
+    }
+
+    /* =========================================================
+       4. NAVIGATION & VIEW ROUTING
+    ========================================================= */
+    function setView(viewName) {
+      currentView = viewName;
+      document.querySelectorAll('main > .view').forEach(v => v.classList.add('hidden'));
+      const target = document.getElementById(`view-${viewName}`);
+      if (target) {
+        target.classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
+    function goHome() {
+      setView('home');
+    }
+
+    function goBrowse(category = 'all') {
+      activeCategory = category;
+      setView('browse');
+      renderCatalog();
+    }
+
+    function openProduct(productId) {
+      const found = IPHONE_CATALOG.find(p => p.id === productId);
+      if (!found) return;
+      activeProduct = found;
+      selectedStorageIdx = 0;
+      selectedColorIdx = 0;
+      selectedGradeIdx = 0;
+      selectedQty = 1;
+      renderProductDetail();
+      setView('detail');
+    }
+
+    /* =========================================================
+       5. PHONE SVG GENERATOR
+    ========================================================= */
+    function generatePhoneSvg(colorHex, isThumbnail = false) {
+      if (isThumbnail) {
+        return `
+      <svg class="thumb-render" viewBox="0 0 100 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="5" width="90" height="170" rx="20" fill="${colorHex}" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+        <rect x="8" y="8" width="84" height="164" rx="17" fill="#111215"/>
+        <rect x="35" y="14" width="30" height="8" rx="4" fill="#000"/>
+        <circle cx="50" cy="90" r="18" fill="${colorHex}" opacity="0.3"/>
+      </svg>
+    `;
+      }
+      return `
+    <svg class="phone-render" viewBox="0 0 200 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Body with dynamic color finish -->
+      <rect x="10" y="10" width="180" height="360" rx="38" fill="${colorHex}" stroke="rgba(255,255,255,0.22)" stroke-width="3"/>
+      <rect x="14" y="14" width="172" height="352" rx="34" fill="#0c0d10"/>
+      <!-- Screen Inner -->
+      <rect x="18" y="18" width="164" height="344" rx="30" fill="url(#screenGrad_${colorHex.replace('#', '')})"/>
+      <!-- Dynamic Island / Sensor pill -->
+      <rect x="74" y="27" width="52" height="15" rx="7.5" fill="#050505"/>
+      <circle cx="84" cy="34.5" r="3" fill="#12151c"/>
+      <!-- Ambient Back-Lens Silhouette -->
+      <rect x="25" y="27" width="54" height="54" rx="14" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+      <circle cx="41" cy="43" r="8.5" fill="#16171b" stroke="${colorHex}" stroke-width="2"/>
+      <circle cx="41" cy="65" r="8.5" fill="#16171b" stroke="${colorHex}" stroke-width="2"/>
+      <circle cx="63" cy="54" r="8.5" fill="#16171b" stroke="${colorHex}" stroke-width="2"/>
+      <!-- Display Glare -->
+      <path d="M22 28L170 340" stroke="rgba(255,255,255,0.04)" stroke-width="38" stroke-linecap="round"/>
+      <defs>
+        <linearGradient id="screenGrad_${colorHex.replace('#', '')}" x1="20" y1="20" x2="180" y2="360" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#141824"/>
+          <stop offset="0.5" stop-color="#101116"/>
+          <stop offset="1" stop-color="#191614"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  `;
+    }
+
+    /* =========================================================
+       6. RENDER HOME & CATALOG
+    ========================================================= */
+    function updateCatalogCounts() {
+      const countElem = document.getElementById('catalogCount');
+      if (countElem) countElem.innerText = IPHONE_CATALOG.length;
+      const countAllElem = document.getElementById('countAll');
+      if (countAllElem) countAllElem.innerText = IPHONE_CATALOG.length;
+    }
+
+    function renderHomeFeatured() {
+      const container = document.getElementById('homeFeaturedList');
+      if (!container) return;
+      // Pick standout models representing latest flagship, pro, mid-range, and value hero
+      const featuredIds = ['ip16promax', 'ip16pro', 'ip15pro', 'ip14', 'ip13', 'ip11'];
+      const featured = featuredIds.map(id => IPHONE_CATALOG.find(p => p.id === id)).filter(Boolean);
+
+      container.innerHTML = featured.map(p => {
+        const swatches = p.colors.map(c => `<div class="swatch-dot" style="background:${c.hex};" title="${c.name}"></div>`).join('');
+        const thumbHtml = p.image
+          ? `<img src="${p.image}" alt="${p.name}" class="thumb-img" onerror="this.outerHTML='${generatePhoneSvg(p.colors[0].phoneColor, true).replace(/'/g, "\\'").replace(/\n/g, '')}'"`
+          + ` loading="lazy">`
+          : generatePhoneSvg(p.colors[0].phoneColor, true);
+        return `
+      <div class="product-card" onclick="openProduct('${p.id}')">
+        <div class="thumb">
+          ${thumbHtml}
+        </div>
+        <div class="info">
+          <div class="eyebrow2">${p.badge} <span class="badge-tag">${p.tag}</span></div>
+          <div class="name">${p.name}</div>
+          <div class="spec">${p.specsSummary}</div>
+          <div class="swatch-row">${swatches}</div>
+          <div class="price-row">
+            <div>
+              <span class="from">FROM</span>
+              <span class="amt">${formatRand(p.basePrice)}</span>
+            </div>
+            <span class="configure-link">Configure &rarr;</span>
+          </div>
+        </div>
+      </div>
+    `;
+      }).join('');
+    }
+
+    function renderCatalog() {
+      const container = document.getElementById('catalogProductList');
+      if (!container) return;
+
+      const query = currentSearch.trim().toLowerCase();
+      const filtered = IPHONE_CATALOG.filter(p => {
+        // category filter
+        let matchCat = true;
+        if (activeCategory === '16-series') matchCat = p.category === '16-series';
+        else if (activeCategory === '15-series') matchCat = p.category === '15-series';
+        else if (activeCategory === '14-series') matchCat = p.category === '14-series';
+        else if (activeCategory === '13-series') matchCat = p.category === '13-series';
+        else if (activeCategory === '12-earlier') matchCat = p.category === '12-series' || p.category === '11-series' || p.category === 'se-series';
+        else if (activeCategory === 'pro-models') matchCat = p.name.includes('Pro');
+        else if (activeCategory === 'under-10k') matchCat = p.basePrice <= 10000;
+        else if (activeCategory === 'under-12k') matchCat = p.basePrice <= 12000;
+        else if (activeCategory === 'budget') matchCat = p.basePrice <= 6000;
+
+        // search filter
+        let matchSearch = true;
+        if (query) {
+          matchSearch = p.name.toLowerCase().includes(query) ||
+            p.specsSummary.toLowerCase().includes(query) ||
+            p.sku.toLowerCase().includes(query) ||
+            (p.specDetails && p.specDetails.chip && p.specDetails.chip.toLowerCase().includes(query)) ||
+            p.storageOptions.some(s => s.size.toLowerCase().includes(query)) ||
+            p.colors.some(c => c.name.toLowerCase().includes(query));
+        }
+        return matchCat && matchSearch;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+      <div class="empty-state">
+        <p style="font-size:26px; margin:0 0 10px;">🔍</p>
+        <b>No matching iPhones found</b>
+        <p>Try searching for a different model or clearing your filter criteria.</p>
+      </div>
+    `;
+        return;
+      }
+
+      container.innerHTML = filtered.map(p => {
+        const swatches = p.colors.map(c => `<div class="swatch-dot" style="background:${c.hex};" title="${c.name}"></div>`).join('');
+        const thumbHtml = p.image
+          ? `<img src="${p.image}" alt="${p.name}" class="thumb-img" onerror="this.outerHTML='${generatePhoneSvg(p.colors[0].phoneColor, true).replace(/'/g, "\\'").replace(/\n/g, '')}'"`
+          + ` loading="lazy">`
+          : generatePhoneSvg(p.colors[0].phoneColor, true);
+        return `
+      <div class="product-card" onclick="openProduct('${p.id}')">
+        <div class="thumb">
+          ${thumbHtml}
+        </div>
+        <div class="info">
+          <div class="eyebrow2">${p.badge} <span class="badge-tag ${p.inStock ? 'green' : ''}">${p.inStock ? 'IN STOCK' : 'PRE-ORDER'}</span></div>
+          <div class="name">${p.name}</div>
+          <div class="spec">${p.specsSummary}</div>
+          <div class="swatch-row">${swatches}</div>
+          <div class="price-row">
+            <div>
+              <span class="from">FROM</span>
+              <span class="amt">${formatRand(p.basePrice)}</span>
+            </div>
+            <span class="configure-link">Configure &rarr;</span>
+          </div>
+        </div>
+      </div>
+    `;
+      }).join('');
+    }
+
+    function setFilter(cat, elem) {
+      activeCategory = cat;
+      document.querySelectorAll('#filterPills .filter-pill').forEach(btn => btn.classList.remove('active'));
+      if (elem) elem.classList.add('active');
+      renderCatalog();
+    }
+
+    function handleSearch() {
+      const input = document.getElementById('searchInput');
+      currentSearch = input.value;
+      renderCatalog();
+    }
+
+    /* =========================================================
+       7. PRODUCT DETAIL & CONFIGURATOR
+    ========================================================= */
+    function calculateCurrentPrice() {
+      if (!activeProduct) return 0;
+      const storageAdd = activeProduct.storageOptions[selectedStorageIdx]?.add || 0;
+      const gradeDiff = CONDITION_GRADES[selectedGradeIdx]?.priceDiff || 0;
+      return Math.max(0, activeProduct.basePrice + storageAdd + gradeDiff) * selectedQty;
+    }
+
+    function renderProductDetail() {
+      if (!activeProduct) return;
+
+      const card = document.getElementById('detailCard');
+      const currentColor = activeProduct.colors[selectedColorIdx];
+      const unitPrice = calculateCurrentPrice() / selectedQty;
+
+      // Prefer real image; fall back to SVG
+      const heroHtml = activeProduct.image
+        ? `<img src="${activeProduct.image}" alt="${activeProduct.name}" class="product-img"
+             id="detailPhoneImg"
+             onerror="this.style.display='none'; document.getElementById('detailPhoneSvgFallback').style.display='block';"
+             loading="lazy">
+           <div id="detailPhoneSvgFallback" style="display:none;">${generatePhoneSvg(currentColor.phoneColor, false)}</div>`
+        : `<div id="detailPhoneWrap">${generatePhoneSvg(currentColor.phoneColor, false)}</div>`;
+
+      card.innerHTML = `
+    <div class="row1">
+      <span class="sku">CERTIFIED SKU: ${activeProduct.sku}</span>
+      <span class="badge-outline">${activeProduct.badge}</span>
+    </div>
+    <div class="phone-wrap" id="detailPhoneWrap">
+      ${heroHtml}
+    </div>
+    <h2>${activeProduct.name}</h2>
+    <div class="cond">Certified Pre-Owned • ICASA Approved • 40-Point Diagnostic Passed</div>
+    <div class="detail-price" id="detailSinglePrice">${formatRand(unitPrice)}</div>
+  `;
+
+      // Diagnostic Specs Table
+      const specsContainer = document.getElementById('detailSpecsTable');
+      specsContainer.innerHTML = `
+    <div class="spec-row">
+      <span>Chipset & Performance</span>
+      <span>${activeProduct.specDetails.chip}</span>
+    </div>
+    <div class="spec-row">
+      <span>Display</span>
+      <span>${activeProduct.specDetails.display}</span>
+    </div>
+    <div class="spec-row">
+      <span>Camera System</span>
+      <span>${activeProduct.specDetails.camera}</span>
+    </div>
+    <div class="spec-row">
+      <span>Battery Standard</span>
+      <span>${activeProduct.specDetails.battery}</span>
+    </div>
+    <div class="spec-row">
+      <span>SIM & Carrier</span>
+      <span>${activeProduct.specDetails.network}</span>
+    </div>
+    <div class="spec-row">
+      <span>Box Contents</span>
+      <span>${activeProduct.specDetails.packaging}</span>
+    </div>
+    <div class="spec-row">
+      <span>Local Warranty</span>
+      <span style="color:var(--gold); font-weight:700;">${activeProduct.specDetails.warranty}</span>
+    </div>
+  `;
+
+      // Storage Chips
+      const storageWrap = document.getElementById('storageOptions');
+      storageWrap.innerHTML = activeProduct.storageOptions.map((opt, idx) => `
+    <div class="opt-chip ${idx === selectedStorageIdx ? 'sel' : ''}" onclick="selectStorage(${idx})">
+      <span>${opt.size}</span>
+      <span class="sub">${opt.add === 0 ? 'Standard' : '+ ' + formatRand(opt.add)}</span>
+    </div>
+  `).join('');
+      document.getElementById('selectedStorageLabel').innerText = activeProduct.storageOptions[selectedStorageIdx].size;
+
+      // Color Swatches
+      const colorWrap = document.getElementById('colorOptions');
+      colorWrap.innerHTML = activeProduct.colors.map((c, idx) => `
+    <div class="color-chip ${idx === selectedColorIdx ? 'sel' : ''}" onclick="selectColor(${idx})" title="${c.name}">
+      <div class="dot" style="background:${c.hex};"></div>
+    </div>
+  `).join('');
+      document.getElementById('selectedColorLabel').innerText = currentColor.name;
+
+      // Grade Options
+      const gradeWrap = document.getElementById('gradeOptions');
+      gradeWrap.innerHTML = CONDITION_GRADES.map((g, idx) => `
+    <div class="opt-chip ${idx === selectedGradeIdx ? 'sel' : ''}" onclick="selectGrade(${idx})" style="flex:1; min-width:140px;">
+      <span>${g.name}</span>
+      <span class="sub">${g.desc}</span>
+    </div>
+  `).join('');
+      document.getElementById('selectedGradeLabel').innerText = CONDITION_GRADES[selectedGradeIdx].name;
+
+      // Quantity and total
+      document.getElementById('detailQty').innerText = selectedQty;
+      updateDetailPriceDisplay();
+    }
+
+    function selectStorage(idx) {
+      selectedStorageIdx = idx;
+      document.getElementById('selectedStorageLabel').innerText = activeProduct.storageOptions[idx].size;
+      document.querySelectorAll('#storageOptions .opt-chip').forEach((c, i) => {
+        c.classList.toggle('sel', i === idx);
+      });
+      updateDetailPriceDisplay();
+    }
+
+    function selectColor(idx) {
+      selectedColorIdx = idx;
+      const col = activeProduct.colors[idx];
+      document.getElementById('selectedColorLabel').innerText = col.name;
+      document.querySelectorAll('#colorOptions .color-chip').forEach((c, i) => {
+        c.classList.toggle('sel', i === idx);
+      });
+      // For models without a real image, update the SVG color live
+      if (!activeProduct.image) {
+        const wrap = document.getElementById('detailPhoneWrap');
+        if (wrap) wrap.innerHTML = generatePhoneSvg(col.phoneColor, false);
+      }
+    }
+
+    function selectGrade(idx) {
+      selectedGradeIdx = idx;
+      document.getElementById('selectedGradeLabel').innerText = CONDITION_GRADES[idx].name;
+      document.querySelectorAll('#gradeOptions .opt-chip').forEach((c, i) => {
+        c.classList.toggle('sel', i === idx);
+      });
+      updateDetailPriceDisplay();
+    }
+
+    function changeQty(delta) {
+      selectedQty = Math.max(1, Math.min(10, selectedQty + delta));
+      document.getElementById('detailQty').innerText = selectedQty;
+      updateDetailPriceDisplay();
+    }
+
+    function updateDetailPriceDisplay() {
+      const total = calculateCurrentPrice();
+      const single = total / selectedQty;
+      const totalFormatted = formatRand(total);
+      const singleFormatted = formatRand(single);
+
+      const priceElem = document.getElementById('detailTotalPrice');
+      if (priceElem) priceElem.innerText = totalFormatted;
+
+      const btnPriceElem = document.getElementById('btnPriceLabel');
+      if (btnPriceElem) btnPriceElem.innerText = totalFormatted;
+
+      const singlePriceElem = document.getElementById('detailSinglePrice');
+      if (singlePriceElem) singlePriceElem.innerText = singleFormatted;
+    }
+
+    /* =========================================================
+       8. CART MANAGEMENT
+    ========================================================= */
+    function saveCart() {
+      localStorage.setItem('iConnect_cart', JSON.stringify(cart));
+      updateCartBadge();
+    }
+
+    function updateCartBadge() {
+      const badge = document.getElementById('cartBadge');
+      const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
+      badge.innerText = totalItems;
+    }
+
+    function addToCartFromDetail() {
+      if (!activeProduct) return;
+
+      const storage = activeProduct.storageOptions[selectedStorageIdx];
+      const color = activeProduct.colors[selectedColorIdx];
+      const grade = CONDITION_GRADES[selectedGradeIdx];
+      const unitPrice = (activeProduct.basePrice + storage.add + grade.priceDiff);
+
+      const itemKey = `${activeProduct.id}_${storage.size}_${color.name}_${grade.id}`;
+      const existing = cart.find(i => i.key === itemKey);
+
+      if (existing) {
+        existing.qty += selectedQty;
+      } else {
+        cart.push({
+          key: itemKey,
+          productId: activeProduct.id,
+          name: activeProduct.name,
+          storage: storage.size,
+          color: color.name,
+          colorHex: color.hex,
+          phoneColor: color.phoneColor,
+          grade: grade.name,
+          price: unitPrice,
+          qty: selectedQty
+        });
+      }
+
+      saveCart();
+      showToast(`Added ${activeProduct.name} (${storage.size}) to bag!`);
+      openCart();
+    }
+
+    function openCart() {
+      renderCartDrawer();
+      document.getElementById('cartOverlay').classList.add('active');
+    }
+
+    function closeCart() {
+      document.getElementById('cartOverlay').classList.remove('active');
+    }
+
+    function renderCartDrawer() {
+      const container = document.getElementById('cartItemsList');
+      const footer = document.getElementById('cartFooter');
+      const totalAmtElem = document.getElementById('cartTotalAmt');
+
+      if (cart.length === 0) {
+        container.innerHTML = `
+      <div class="cart-empty">
+        <div style="font-size:36px; margin-bottom:12px;">🛍️</div>
+        <b>Your shopping bag is empty</b>
+        <p style="margin-top:6px;">Browse certified iPhones and configure your model with genuine Apple battery health.</p>
+        <button class="btn primary" style="margin-top:16px;" onclick="closeCart(); goBrowse();">Shop Catalog &rarr;</button>
+      </div>
+    `;
+        footer.classList.add('hidden');
+        return;
+      }
+
+      footer.classList.remove('hidden');
+      let grandTotal = 0;
+
+      container.innerHTML = cart.map((item, idx) => {
+        const itemTotal = item.price * item.qty;
+        grandTotal += itemTotal;
+        return `
+      <div class="cart-item">
+        <div style="flex:1;">
+          <div class="name">${item.name}</div>
+          <div class="meta">${item.storage} • ${item.color} • ${item.grade}</div>
+          <div class="price">${formatRand(item.price)} × ${item.qty} = ${formatRand(itemTotal)}</div>
+        </div>
+        <div class="right">
+          <div class="qty-stepper" style="margin-top:0;">
+            <button onclick="updateCartItemQty(${idx}, -1)" style="width:28px; height:28px; font-size:14px;">−</button>
+            <span class="n" style="font-size:14px; width:18px;">${item.qty}</span>
+            <button onclick="updateCartItemQty(${idx}, 1)" style="width:28px; height:28px; font-size:14px;">+</button>
+          </div>
+          <span class="remove-link" onclick="removeCartItem(${idx})">Remove</span>
+        </div>
+      </div>
+    `;
+      }).join('');
+
+      totalAmtElem.innerText = formatRand(grandTotal);
+    }
+
+    function updateCartItemQty(idx, delta) {
+      if (!cart[idx]) return;
+      cart[idx].qty += delta;
+      if (cart[idx].qty <= 0) {
+        cart.splice(idx, 1);
+      }
+      saveCart();
+      renderCartDrawer();
+    }
+
+    function removeCartItem(idx) {
+      cart.splice(idx, 1);
+      saveCart();
+      renderCartDrawer();
+    }
+
+    /* =========================================================
+       9. CHECKOUT & ORDERS
+    ========================================================= */
+    function openCheckout() {
+      if (cart.length === 0) return;
+      closeCart();
+      const grandTotal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+      document.getElementById('checkoutTotalAmt').innerText = formatRand(grandTotal);
+      document.getElementById('checkoutOverlay').classList.add('active');
+    }
+
+    function closeCheckout() {
+      document.getElementById('checkoutOverlay').classList.remove('active');
+    }
+
+    function selectPayment(method, elem) {
+      selectedPaymentMethod = method;
+      document.querySelectorAll('#checkoutOverlay .pay-pill').forEach(p => p.classList.remove('sel'));
+      if (elem) elem.classList.add('sel');
+    }
+
+    function handlePlaceOrder(e) {
+      e.preventDefault();
+      if (cart.length === 0) return;
+
+      const name = document.getElementById('custName').value.trim();
+      const phone = document.getElementById('custPhone').value.trim();
+      const email = document.getElementById('custEmail').value.trim();
+      const address = document.getElementById('custAddress').value.trim();
+      const city = document.getElementById('custCity').value.trim();
+      const postal = document.getElementById('custPostal').value.trim();
+      const province = document.getElementById('custProvince').value;
+
+      const grandTotal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+      const randomRef = 'IC-' + Math.floor(10000 + Math.random() * 90000);
+      const now = new Date();
+      const dateStr = now.toISOString().slice(0, 16).replace('T', ' ');
+
+      const newOrder = {
+        id: randomRef,
+        date: dateStr,
+        customer: {
+          name,
+          phone,
+          email,
+          address,
+          city,
+          postal,
+          province
+        },
+        items: [...cart],
+        paymentMethod: selectedPaymentMethod,
+        status: 'Payment Confirmed',
+        total: grandTotal
+      };
+
+      orders.unshift(newOrder);
+      localStorage.setItem('iConnect_orders', JSON.stringify(orders));
+
+      // Reset cart
+      cart = [];
+      saveCart();
+      closeCheckout();
+
+      // Populate confirmation modal
+      document.getElementById('confirmOrderRef').innerText = randomRef;
+      document.getElementById('confirmCustName').innerText = name + ` (${phone})`;
+      document.getElementById('confirmAddress').innerText = `${address}, ${city}, ${province} (${postal})`;
+      document.getElementById('confirmPaymentMethod').innerText = selectedPaymentMethod;
+      document.getElementById('confirmTotal').innerText = formatRand(grandTotal);
+
+      document.getElementById('confirmOverlay').classList.add('active');
+    }
+
+    function closeConfirmModal() {
+      document.getElementById('confirmOverlay').classList.remove('active');
+      goHome();
+    }
+
+    function handleOverlayClick(e, overlayId) {
+      if (e.target.id === overlayId) {
+        document.getElementById(overlayId).classList.remove('active');
+      }
+    }
+
+    /* =========================================================
+       10. STAFF / BACK-OFFICE PORTAL
+    ========================================================= */
+    function openStaffModal() {
+      setView('staff');
+      if (staffAuthenticated) {
+        document.getElementById('staffAuthBox').classList.add('hidden');
+        document.getElementById('staffDashboard').classList.remove('hidden');
+        renderStaffDashboard();
+      } else {
+        document.getElementById('staffAuthBox').classList.remove('hidden');
+        document.getElementById('staffDashboard').classList.add('hidden');
+        document.getElementById('pinError').style.display = 'none';
+      }
+    }
+
+    function verifyPin() {
+      const pinInput = document.getElementById('staffPinInput');
+      const err = document.getElementById('pinError');
+      if (pinInput.value === '1234') {
+        staffAuthenticated = true;
+        sessionStorage.setItem('iConnect_staff_auth', 'true');
+        err.style.display = 'none';
+        pinInput.value = '';
+        document.getElementById('staffAuthBox').classList.add('hidden');
+        document.getElementById('staffDashboard').classList.remove('hidden');
+        renderStaffDashboard();
+        showToast('Signed in to iConnect Staff Portal');
+      } else {
+        err.style.display = 'block';
+      }
+    }
+
+    function logoutStaff() {
+      staffAuthenticated = false;
+      sessionStorage.removeItem('iConnect_staff_auth');
+      openStaffModal();
+    }
+
+    function setStaffTab(tabName, elem) {
+      document.querySelectorAll('.tab-pill').forEach(t => t.classList.remove('active'));
+      if (elem) elem.classList.add('active');
+
+      document.getElementById('staffTabMetrics').classList.add('hidden');
+      document.getElementById('staffTabOrders').classList.add('hidden');
+      document.getElementById('staffTabInventory').classList.add('hidden');
+
+      if (tabName === 'metrics') document.getElementById('staffTabMetrics').classList.remove('hidden');
+      if (tabName === 'orders') {
+        document.getElementById('staffTabOrders').classList.remove('hidden');
+        renderStaffOrders();
+      }
+      if (tabName === 'inventory') {
+        document.getElementById('staffTabInventory').classList.remove('hidden');
+        renderStaffInventory();
+      }
+    }
+
+    function renderStaffDashboard() {
+      // Metrics
+      const totalRev = orders.reduce((s, o) => s + o.total, 0);
+      const totalUnits = orders.reduce((s, o) => s + o.items.reduce((sum, i) => sum + i.qty, 0), 0);
+      const avgBasket = orders.length > 0 ? Math.round(totalRev / orders.length) : 0;
+
+      document.getElementById('statRevenue').innerText = formatRand(totalRev);
+      document.getElementById('statUnits').innerText = totalUnits;
+      document.getElementById('statActiveOrders').innerText = orders.length;
+      document.getElementById('statAvgBasket').innerText = formatRand(avgBasket);
+      document.getElementById('staffOrderCount').innerText = orders.length;
+
+      renderStaffOrders();
+    }
+
+    function renderStaffOrders() {
+      const container = document.getElementById('staffOrdersList');
+      if (!container) return;
+
+      if (orders.length === 0) {
+        container.innerHTML = '<div class="empty-state">No customer orders recorded yet.</div>';
+        return;
+      }
+
+      container.innerHTML = orders.map((order, idx) => {
+        const itemsSummary = order.items.map(i => `${i.qty}× ${i.name} (${i.storage}, ${i.color})`).join(', ');
+        return `
+      <div class="log-item">
+        <div class="top">
+          <span>${order.id} • ${order.customer.name}</span>
+          <span class="status-pill ${order.status.toLowerCase().includes('dispatched') ? 'dispatched' : (order.status.toLowerCase().includes('deliv') ? '' : 'pending')}">${order.status}</span>
+        </div>
+        <div class="sub">
+          <b>Date:</b> ${order.date} | <b>Tel:</b> ${order.customer.phone} | <b>Destination:</b> ${order.customer.city || order.customer.province}<br>
+          <b>Items:</b> ${itemsSummary}<br>
+          <b>Payment:</b> ${order.paymentMethod} • <b>Total:</b> ${formatRand(order.total)}
+        </div>
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <button class="pill-btn" onclick="cycleOrderStatus(${idx})">Advance Status &rarr;</button>
+          <button class="pill-btn" style="color:var(--coral);" onclick="deleteOrder(${idx})">Archive</button>
+        </div>
+      </div>
+    `;
+      }).join('');
+    }
+
+    function cycleOrderStatus(idx) {
+      if (!orders[idx]) return;
+      const statuses = ['Payment Confirmed', 'Packing & 40-Pt Inspection', 'Dispatched via Courier Guy', 'Delivered'];
+      const curIdx = statuses.indexOf(orders[idx].status);
+      const next = statuses[(curIdx + 1) % statuses.length];
+      orders[idx].status = next;
+      localStorage.setItem('iConnect_orders', JSON.stringify(orders));
+      renderStaffDashboard();
+      showToast(`Order ${orders[idx].id} updated to "${next}"`);
+    }
+
+    function deleteOrder(idx) {
+      if (!confirm('Are you sure you want to remove this order from active records?')) return;
+      orders.splice(idx, 1);
+      localStorage.setItem('iConnect_orders', JSON.stringify(orders));
+      renderStaffDashboard();
+      showToast('Order removed');
+    }
+
+    function renderStaffInventory() {
+      const container = document.getElementById('staffInventoryList');
+      if (!container) return;
+
+      container.innerHTML = IPHONE_CATALOG.map((p, idx) => `
+    <div class="product-card" style="cursor:default;">
+      <div class="info" style="display:flex; justify-content:space-between; align-items:center; width:100%;">
+        <div>
+          <div class="name" style="margin:0;">${p.name}</div>
+          <div class="spec" style="margin:0;">SKU: ${p.sku} • Base ${formatRand(p.basePrice)}</div>
+        </div>
+        <div>
+          <button class="pill-btn ${p.inStock ? 'filled' : ''}" onclick="toggleStock(${idx})">
+            ${p.inStock ? 'In Stock (Active)' : 'Marked Out of Stock'}
+          </button>
+        </div>
+      </div>
+    </div>
+  `).join('');
+    }
+
+    function toggleStock(idx) {
+      if (!IPHONE_CATALOG[idx]) return;
+      IPHONE_CATALOG[idx].inStock = !IPHONE_CATALOG[idx].inStock;
+      renderStaffInventory();
+      renderCatalog();
+      showToast(`${IPHONE_CATALOG[idx].name} stock status updated.`);
+    }
+
+    function injectMockOrder() {
+      const randomRef = 'IC-' + Math.floor(10000 + Math.random() * 90000);
+      const p = IPHONE_CATALOG[Math.floor(Math.random() * IPHONE_CATALOG.length)];
+      const mockNames = ['Zanele Khumalo', 'Darren Pillay', 'Anrich Nortje', 'Nomvula Sithole'];
+      const mockCities = ['Umhlanga, KZN', 'Rosebank, Gauteng', 'Stellenbosch, Western Cape', 'Centurion, Gauteng'];
+
+      const newOrder = {
+        id: randomRef,
+        date: new Date().toISOString().slice(0, 16).replace('T', ' '),
+        customer: {
+          name: mockNames[Math.floor(Math.random() * mockNames.length)],
+          phone: '08' + Math.floor(10000000 + Math.random() * 89999999),
+          city: mockCities[Math.floor(Math.random() * mockCities.length)]
+        },
+        items: [
+          { name: p.name, storage: '128GB', color: p.colors[0].name, grade: 'Grade A+ Pristine (Like New)', price: p.basePrice, qty: 1 }
+        ],
+        paymentMethod: 'Instant EFT / Ozow',
+        status: 'Payment Confirmed',
+        total: p.basePrice
+      };
+
+      orders.unshift(newOrder);
+      localStorage.setItem('iConnect_orders', JSON.stringify(orders));
+      renderStaffDashboard();
+      showToast(`Created sample order ${randomRef}`);
+    }
+
+    function resetDemoData() {
+      if (!confirm('Reset all demo orders back to initial mock set?')) return;
+      localStorage.removeItem('iConnect_orders');
+      location.reload();
+    }
+
+    /* =========================================================
+       11. THEME TOGGLE (DARK / LIGHT)
+    ========================================================= */
+    function initTheme() {
+      const saved = localStorage.getItem('iConnect_theme');
+      const root = document.documentElement;
+      const icon = document.getElementById('themeIcon');
+      if (saved) {
+        root.setAttribute('data-theme', saved);
+        if (icon) icon.innerText = saved === 'light' ? '🌙' : '☀️';
+      } else {
+        // Default to dark
+        root.setAttribute('data-theme', 'dark');
+        if (icon) icon.innerText = '☀️';
+      }
+    }
+
+    function toggleTheme() {
+      const root = document.documentElement;
+      const current = root.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('iConnect_theme', next);
+      const icon = document.getElementById('themeIcon');
+      if (icon) icon.innerText = next === 'light' ? '🌙' : '☀️';
+      showToast(`Switched to ${next} theme`);
+    }
+
+    /* =========================================================
+       12. INITIALIZATION
+    ========================================================= */
+    document.addEventListener('DOMContentLoaded', () => {
+      initTheme();
+      updateCartBadge();
+      updateCatalogCounts();
+      renderHomeFeatured();
+      renderCatalog();
+    });
+  </script>
+</body>
+
+</html>
